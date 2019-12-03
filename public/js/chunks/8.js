@@ -120,6 +120,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
  // Top Horizontalbar
 
  // Main Navbar Menu
@@ -959,11 +960,11 @@ __webpack_require__.r(__webpack_exports__);
       return this.to ? this.$acl.check(this.$router.match(this.to).meta.rule) : true;
     },
     activeLink: function activeLink() {
-      //console.log("to: " + this.to);
-      //console.log("path: " + this.$route.path);
-      //console.log("slug: " + this.slug);
-      //console.log("parent: " + this.$route.meta.parent);
-      return this.to == this.$route.path || this.$route.meta.parent == this.to && this.to ? true : false;
+      console.log("to: " + this.to);
+      console.log("path: " + this.$route.path);
+      console.log("slug: " + this.slug);
+      console.log("parent: " + this.$route.meta.parent);
+      return this.to == this.$route.path || this.$route.meta.parent == this.slug && this.to ? true : false;
     }
   }
 });
@@ -1688,6 +1689,10 @@ __webpack_require__.r(__webpack_exports__);
       return this.to ? this.$acl.check(this.$router.match(this.to).meta.rule) : true;
     },
     activeLink: function activeLink() {
+      //console.log("to: " + this.to);
+      //console.log("path: " + this.$route.path);
+      //console.log("slug: " + this.slug);
+      //console.log("parent: " + this.$route.meta.parent);
       return this.to == this.$route.path || this.$route.meta.parent == this.slug && this.to ? true : false;
     }
   }
@@ -4817,9 +4822,9 @@ __webpack_require__.r(__webpack_exports__);
 {
   url: "/currencies",
   name: "CRYPTOCURRENCIES",
-  slug: "cryptocurrencies",
+  slug: "currencies",
   icon: null,
-  i18n: "CRYPTOCURRENCIES"
+  i18n: "CURRENCIES"
 }, {
   url: "/markets",
   name: "MAREKETS",

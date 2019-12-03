@@ -115097,12 +115097,13 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
         return Promise.all(/*! import() */[__webpack_require__.e(126), __webpack_require__.e(24)]).then(__webpack_require__.bind(null, /*! @/datum/views/currencies/Currencies.vue */ "./resources/js/src/datum/views/currencies/Currencies.vue"));
       },
       meta: {
-        pageTitle: 'currencies',
+        pageTitle: 'Currencies',
+        parent: "",
         rule: 'editor'
       }
     }, {
       path: '/currencies/:currencyName',
-      name: 'currencies',
+      name: 'currencies_detail',
       component: function component() {
         return Promise.all(/*! import() */[__webpack_require__.e(133), __webpack_require__.e(0), __webpack_require__.e(71)]).then(__webpack_require__.bind(null, /*! @/datum/views/currencies/CurrencyDetail.vue */ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue"));
       },
@@ -115119,7 +115120,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       },
       meta: {
         pageTitle: 'Markets',
-        parent: "markets",
+        parent: "",
         rule: 'editor'
       }
     }, {
@@ -115130,7 +115131,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       },
       meta: {
         pageTitle: 'Watchlist',
-        parent: "watchlist",
+        parent: "",
         rule: 'editor'
       }
     }]

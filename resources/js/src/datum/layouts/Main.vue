@@ -29,6 +29,7 @@
       @updateRouterTransition = "updateRouterTransition" />
       -->
 
+
     <v-nav-menu
       :navMenuItems = "navMenuItems"
       title         = "Datum"

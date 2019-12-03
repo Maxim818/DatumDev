@@ -49,13 +49,14 @@ const router = new Router({
                 name: 'currencies',
                 component: () => import('@/datum/views/currencies/Currencies.vue'),
                 meta: {
-                    pageTitle: 'currencies',
+                    pageTitle: 'Currencies',
+                    parent: "",
                     rule: 'editor'
                 }
             },
             {
                 path: '/currencies/:currencyName',
-                name: 'currencies',
+                name: 'currencies_detail',
                 component: () => import('@/datum/views/currencies/CurrencyDetail.vue'),
                 meta: {
                     pageTitle: 'Currency Detail',
@@ -69,7 +70,7 @@ const router = new Router({
                 component: () => import('@/datum/views/markets/Markets.vue'),
                 meta: {
                     pageTitle: 'Markets',
-                    parent: "markets",
+                    parent: "",
                     rule: 'editor'
                 }
             },
@@ -79,7 +80,7 @@ const router = new Router({
                 component: () => import('@/datum/views/watchlist/Watchlist.vue'),
                 meta: {
                     pageTitle: 'Watchlist',
-                    parent: "watchlist",
+                    parent: "",
                     rule: 'editor'
                 }
             },

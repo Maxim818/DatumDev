@@ -61,12 +61,12 @@ export default {
     },
     activeLink() {
       
-      //console.log("to: " + this.to);
-      //console.log("path: " + this.$route.path);
-      //console.log("slug: " + this.slug);
-      //console.log("parent: " + this.$route.meta.parent);
+      console.log("to: " + this.to);
+      console.log("path: " + this.$route.path);
+      console.log("slug: " + this.slug);
+      console.log("parent: " + this.$route.meta.parent);
 
-      return ((this.to == this.$route.path) || (this.$route.meta.parent == this.to) && this.to) ? true : false
+      return ((this.to == this.$route.path) || (this.$route.meta.parent == this.slug) && this.to) ? true : false
     }
   }
 }
