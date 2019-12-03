@@ -55,10 +55,11 @@ const router = new Router({
             },
             {
                 path: '/currencies/:currencyName',
-                name: 'currency detail',
+                name: 'currencies',
                 component: () => import('@/datum/views/currencies/CurrencyDetail.vue'),
                 meta: {
                     pageTitle: 'Currency Detail',
+                    parent: "currencies",
                     rule: 'editor'
                 }
             },
@@ -68,15 +69,17 @@ const router = new Router({
                 component: () => import('@/datum/views/markets/Markets.vue'),
                 meta: {
                     pageTitle: 'Markets',
+                    parent: "markets",
                     rule: 'editor'
                 }
             },
             {
                 path: '/watchlist',
-                name: 'currencies',
+                name: 'watchlist',
                 component: () => import('@/datum/views/watchlist/Watchlist.vue'),
                 meta: {
                     pageTitle: 'Watchlist',
+                    parent: "watchlist",
                     rule: 'editor'
                 }
             },

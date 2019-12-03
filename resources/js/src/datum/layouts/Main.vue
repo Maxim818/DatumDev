@@ -106,7 +106,7 @@ import HNavMenu            from "@/datum/layouts/components/navbar/HorizontalNav
 
 import HDetailMenu         from '@/datum/layouts/components/navbar/HorizontalDetailMenu.vue' // Detail Menu
 
-import navMenuItems        from "@/layouts/components/vertical-nav-menu/navMenuItems_datum.js" // Menuitem
+import navMenuItems        from "@/datum/layouts/components/navbar/navMenuItems.js" // Menuitem
 
 import TheNavbarVertical   from '@/datum/layouts/components/navbar/TheNavbarVertical.vue' // Top Verticalbar
 

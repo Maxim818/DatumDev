@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _datum_layouts_components_navbar_TheNavbarHorizontal_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/datum/layouts/components/navbar/TheNavbarHorizontal.vue */ "./resources/js/src/datum/layouts/components/navbar/TheNavbarHorizontal.vue");
 /* harmony import */ var _datum_layouts_components_navbar_HorizontalNavMenu_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/datum/layouts/components/navbar/HorizontalNavMenu.vue */ "./resources/js/src/datum/layouts/components/navbar/HorizontalNavMenu.vue");
 /* harmony import */ var _datum_layouts_components_navbar_HorizontalDetailMenu_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/datum/layouts/components/navbar/HorizontalDetailMenu.vue */ "./resources/js/src/datum/layouts/components/navbar/HorizontalDetailMenu.vue");
-/* harmony import */ var _layouts_components_vertical_nav_menu_navMenuItems_datum_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/layouts/components/vertical-nav-menu/navMenuItems_datum.js */ "./resources/js/src/layouts/components/vertical-nav-menu/navMenuItems_datum.js");
+/* harmony import */ var _datum_layouts_components_navbar_navMenuItems_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/datum/layouts/components/navbar/navMenuItems.js */ "./resources/js/src/datum/layouts/components/navbar/navMenuItems.js");
 /* harmony import */ var _datum_layouts_components_navbar_TheNavbarVertical_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/datum/layouts/components/navbar/TheNavbarVertical.vue */ "./resources/js/src/datum/layouts/components/navbar/TheNavbarVertical.vue");
 /* harmony import */ var _datum_layouts_components_navbar_VerticalNavMenu_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/datum/layouts/components/navbar/VerticalNavMenu.vue */ "./resources/js/src/datum/layouts/components/navbar/VerticalNavMenu.vue");
 /* harmony import */ var _datum_layouts_components_TheFooter_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/datum/layouts/components/TheFooter.vue */ "./resources/js/src/datum/layouts/components/TheFooter.vue");
@@ -157,7 +157,7 @@ __webpack_require__.r(__webpack_exports__);
       isNavbarDark: false,
       navbarColor: _datum_config_themeConfig_js__WEBPACK_IMPORTED_MODULE_7__["default"].navbarColor || '#fff',
       navbarType: _datum_config_themeConfig_js__WEBPACK_IMPORTED_MODULE_7__["default"].navbarType || 'floating',
-      navMenuItems: _layouts_components_vertical_nav_menu_navMenuItems_datum_js__WEBPACK_IMPORTED_MODULE_3__["default"],
+      navMenuItems: _datum_layouts_components_navbar_navMenuItems_js__WEBPACK_IMPORTED_MODULE_3__["default"],
       detailMenuItems: {},
       routerTransition: _datum_config_themeConfig_js__WEBPACK_IMPORTED_MODULE_7__["default"].routerTransition || 'none',
       routeTitle: this.$route.meta.pageTitle,
@@ -959,7 +959,11 @@ __webpack_require__.r(__webpack_exports__);
       return this.to ? this.$acl.check(this.$router.match(this.to).meta.rule) : true;
     },
     activeLink: function activeLink() {
-      return this.to == this.$route.path || this.$route.meta.parent == this.slug && this.to ? true : false;
+      //console.log("to: " + this.to);
+      //console.log("path: " + this.$route.path);
+      //console.log("slug: " + this.slug);
+      //console.log("parent: " + this.$route.meta.parent);
+      return this.to == this.$route.path || this.$route.meta.parent == this.to && this.to ? true : false;
     }
   }
 });
@@ -4775,6 +4779,63 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/src/datum/layouts/components/navbar/navMenuItems.js":
+/*!**************************************************************************!*\
+  !*** ./resources/js/src/datum/layouts/components/navbar/navMenuItems.js ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/*=========================================================================================
+  File Name: sidebarItems.js
+  Description: Sidebar Items list. Add / Remove menu items from here.
+  Strucutre:
+          url     => router path
+          name    => name to display in sidebar
+          slug    => router path name
+          icon    => Feather Icon component/icon name
+          tag     => text to display on badge
+          tagColor  => class to apply on badge element
+          i18n    => Internationalization
+          submenu   => submenu of current item (current item will become dropdown )
+                NOTE: Submenu don't have any icon(you can add icon if u want to display)
+          isDisabled  => disable sidebar item/group
+  ----------------------------------------------------------------------------------------
+  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+  Author: Pixinvent
+  Author URL: http://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+/* harmony default export */ __webpack_exports__["default"] = ([// {
+//   url: "/apps/email",
+//   name: "Email",
+//   slug: "email",
+//   icon: "MailIcon",
+//   i18n: "Email",
+// },
+{
+  url: "/currencies",
+  name: "CRYPTOCURRENCIES",
+  slug: "cryptocurrencies",
+  icon: null,
+  i18n: "CRYPTOCURRENCIES"
+}, {
+  url: "/markets",
+  name: "MAREKETS",
+  slug: "markets",
+  icon: null,
+  i18n: "MAREKETS"
+}, {
+  url: "/watchlist",
+  name: "WATCHLIST",
+  slug: "watchlist",
+  icon: null,
+  i18n: "WATCHLIST"
+}]);
+
+/***/ }),
+
 /***/ "./resources/js/src/layouts/components/navbar/components/SearchBarTest.vue":
 /*!*********************************************************************************!*\
   !*** ./resources/js/src/layouts/components/navbar/components/SearchBarTest.vue ***!
@@ -4841,63 +4902,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SearchBarTest_vue_vue_type_template_id_2cca31ce___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
-
-/***/ }),
-
-/***/ "./resources/js/src/layouts/components/vertical-nav-menu/navMenuItems_datum.js":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/src/layouts/components/vertical-nav-menu/navMenuItems_datum.js ***!
-  \*************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/*=========================================================================================
-  File Name: sidebarItems.js
-  Description: Sidebar Items list. Add / Remove menu items from here.
-  Strucutre:
-          url     => router path
-          name    => name to display in sidebar
-          slug    => router path name
-          icon    => Feather Icon component/icon name
-          tag     => text to display on badge
-          tagColor  => class to apply on badge element
-          i18n    => Internationalization
-          submenu   => submenu of current item (current item will become dropdown )
-                NOTE: Submenu don't have any icon(you can add icon if u want to display)
-          isDisabled  => disable sidebar item/group
-  ----------------------------------------------------------------------------------------
-  Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-  Author: Pixinvent
-  Author URL: http://www.themeforest.net/user/pixinvent
-==========================================================================================*/
-/* harmony default export */ __webpack_exports__["default"] = ([// {
-//   url: "/apps/email",
-//   name: "Email",
-//   slug: "email",
-//   icon: "MailIcon",
-//   i18n: "Email",
-// },
-{
-  url: "/currencies",
-  name: "CRYPTOCURRENCIES",
-  slug: "cryptocurrencies",
-  icon: null,
-  i18n: "CRYPTOCURRENCIES"
-}, {
-  url: "/markets",
-  name: "MAREKETS",
-  slug: "markets",
-  icon: null,
-  i18n: "MAREKETS"
-}, {
-  url: "/watchlist",
-  name: "WATCHLIST",
-  slug: "watchlist",
-  icon: null,
-  i18n: "WATCHLIST"
-}]);
 
 /***/ })
 

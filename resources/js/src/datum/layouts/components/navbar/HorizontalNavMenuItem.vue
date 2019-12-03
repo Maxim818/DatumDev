@@ -60,7 +60,13 @@ export default {
       return this.to ? this.$acl.check(this.$router.match(this.to).meta.rule) : true
     },
     activeLink() {
-      return ((this.to == this.$route.path) || (this.$route.meta.parent == this.slug) && this.to) ? true : false
+      
+      //console.log("to: " + this.to);
+      //console.log("path: " + this.$route.path);
+      //console.log("slug: " + this.slug);
+      //console.log("parent: " + this.$route.meta.parent);
+
+      return ((this.to == this.$route.path) || (this.$route.meta.parent == this.to) && this.to) ? true : false
     }
   }
 }

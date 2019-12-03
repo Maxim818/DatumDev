@@ -115094,7 +115094,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       path: '/currencies',
       name: 'currencies',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 126).then(__webpack_require__.bind(null, /*! @/datum/views/currencies/Currencies.vue */ "./resources/js/src/datum/views/currencies/Currencies.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(126), __webpack_require__.e(24)]).then(__webpack_require__.bind(null, /*! @/datum/views/currencies/Currencies.vue */ "./resources/js/src/datum/views/currencies/Currencies.vue"));
       },
       meta: {
         pageTitle: 'currencies',
@@ -115102,32 +115102,35 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       }
     }, {
       path: '/currencies/:currencyName',
-      name: 'currency detail',
+      name: 'currencies',
       component: function component() {
         return Promise.all(/*! import() */[__webpack_require__.e(133), __webpack_require__.e(0), __webpack_require__.e(71)]).then(__webpack_require__.bind(null, /*! @/datum/views/currencies/CurrencyDetail.vue */ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue"));
       },
       meta: {
         pageTitle: 'Currency Detail',
+        parent: "currencies",
         rule: 'editor'
       }
     }, {
       path: '/markets',
       name: 'markets',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 104).then(__webpack_require__.bind(null, /*! @/datum/views/markets/Markets.vue */ "./resources/js/src/datum/views/markets/Markets.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(126), __webpack_require__.e(132)]).then(__webpack_require__.bind(null, /*! @/datum/views/markets/Markets.vue */ "./resources/js/src/datum/views/markets/Markets.vue"));
       },
       meta: {
         pageTitle: 'Markets',
+        parent: "markets",
         rule: 'editor'
       }
     }, {
       path: '/watchlist',
-      name: 'currencies',
+      name: 'watchlist',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 132).then(__webpack_require__.bind(null, /*! @/datum/views/watchlist/Watchlist.vue */ "./resources/js/src/datum/views/watchlist/Watchlist.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(126), __webpack_require__.e(131)]).then(__webpack_require__.bind(null, /*! @/datum/views/watchlist/Watchlist.vue */ "./resources/js/src/datum/views/watchlist/Watchlist.vue"));
       },
       meta: {
         pageTitle: 'Watchlist',
+        parent: "watchlist",
         rule: 'editor'
       }
     }]
