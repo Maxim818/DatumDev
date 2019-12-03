@@ -59,7 +59,7 @@ import HNavMenuGroup  from "@/layouts/components/horizontal-nav-menu/HorizontalN
 import HNavMenuHeader from "@/layouts/components/horizontal-nav-menu/HorizontalNavMenuHeader.vue"
 
 import HNavMenuItem   from "@/datum/layouts/components/navbar/HorizontalNavMenuItem.vue"
-import SearchBar      from "@/layouts/components/navbar/components/SearchBarTest.vue"
+import SearchBar      from "@/datum/layouts/components/SearchBar.vue"
 
 export default {
   props: {

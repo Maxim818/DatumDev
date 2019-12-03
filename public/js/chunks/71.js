@@ -1,17 +1,19 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[71],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_apexcharts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-apexcharts */ "./node_modules/vue-apexcharts/dist/vue-apexcharts.js");
-/* harmony import */ var vue_apexcharts__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_apexcharts__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _views_charts_and_maps_charts_apex_charts_apexChartData_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/views/charts-and-maps/charts/apex-charts/apexChartData.js */ "./resources/js/src/views/charts-and-maps/charts/apex-charts/apexChartData.js");
+/* harmony import */ var _TabsDefault_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TabsDefault.vue */ "./resources/js/src/views/components/vuesax/tabs/TabsDefault.vue");
+/* harmony import */ var _TabsColor_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TabsColor.vue */ "./resources/js/src/views/components/vuesax/tabs/TabsColor.vue");
+/* harmony import */ var _TabsAlignments_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TabsAlignments.vue */ "./resources/js/src/views/components/vuesax/tabs/TabsAlignments.vue");
+/* harmony import */ var _TabsPosition_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TabsPosition.vue */ "./resources/js/src/views/components/vuesax/tabs/TabsPosition.vue");
+/* harmony import */ var _TabsIcons_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TabsIcons.vue */ "./resources/js/src/views/components/vuesax/tabs/TabsIcons.vue");
 //
 //
 //
@@ -21,31 +23,43 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      apexChatData: _views_charts_and_maps_charts_apex_charts_apexChartData_js__WEBPACK_IMPORTED_MODULE_1__["default"]
-    };
-  },
   components: {
-    VueApexCharts: vue_apexcharts__WEBPACK_IMPORTED_MODULE_0___default.a
+    TabsDefault: _TabsDefault_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    TabsColor: _TabsColor_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    TabsAlignments: _TabsAlignments_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+    TabsPosition: _TabsPosition_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    TabsIcons: _TabsIcons_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _datum_views_currencies_CurrencyTab_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/datum/views/currencies/CurrencyTab.vue */ "./resources/js/src/datum/views/currencies/CurrencyTab.vue");
 //
 //
 //
@@ -100,109 +114,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    CurrencyTab: _datum_views_currencies_CurrencyTab_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
-  },
-  data: function data() {
-    return {
-      mailTo: "",
-      companyDetails: {
-        name: 'Microsion Technologies Pvt. Ltd.',
-        addressLine1: '9 N. Sherwood Court',
-        addressLine2: 'Elyria, OH',
-        zipcode: '94203',
-        mailId: 'hello@pixinvent.net',
-        mobile: '+91 999 999 9999'
-      },
-      recipientDetails: {
-        fullName: 'Peter Stark',
-        addressLine1: '8577 West West Drive ',
-        addressLine2: 'Holbrook, NY',
-        zipcode: '90001',
-        mailId: 'peter@mail.com',
-        mobile: '+91 988 888 8888'
-      },
-      invoiceDetails: {
-        invoiceNo: '001/2019',
-        invoiceDate: 'Mon Dec 10 2018 07:46:00 GMT+0000 (GMT)'
-      },
-      invoiceData: {
-        tasks: [{
-          id: 1,
-          task: 'Website Redesign',
-          hours: 60,
-          rate: 15,
-          amount: 90000
-        }, {
-          id: 2,
-          task: 'Newsletter template design',
-          hours: 20,
-          rate: 12,
-          amount: 24000
-        }],
-        subtotal: 114000,
-        discountPercentage: 5,
-        discountedAmount: 5700,
-        total: 108300
-      }
-    };
-  },
-  computed: {},
-  methods: {
-    printInvoice: function printInvoice() {
-      window.print();
-    }
-  },
-  mounted: function mounted() {
-    this.$emit("setAppClasses", "currencydetail-page");
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 //
 //
 //
@@ -252,278 +163,56 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      users: [{
-        "id": 1,
-        "name": "Leanne Graham",
-        "username": "Bret",
-        "email": "Sincere@april.biz",
-        "website": "hildegard.org"
-      }, {
-        "id": 2,
-        "name": "Ervin Howell",
-        "username": "Antonette",
-        "email": "Shanna@melissa.tv",
-        "website": "anastasia.net"
-      }, {
-        "id": 3,
-        "name": "Clementine Bauch",
-        "username": "Samantha",
-        "email": "Nathan@yesenia.net",
-        "website": "ramiro.info"
-      }, {
-        "id": 4,
-        "name": "Patricia Lebsack",
-        "username": "Karianne",
-        "email": "Julianne.OConner@kory.org",
-        "website": "kale.biz"
-      }, {
-        "id": 5,
-        "name": "Chelsey Dietrich",
-        "username": "Kamren",
-        "email": "Lucio_Hettinger@annie.ca",
-        "website": "demarco.info"
-      }, {
-        "id": 6,
-        "name": "Mrs. Dennis Schulist",
-        "username": "Leopoldo_Corkery",
-        "email": "Karley_Dach@jasper.info",
-        "website": "ola.org"
-      }, {
-        "id": 7,
-        "name": "Kurtis Weissnat",
-        "username": "Elwyn.Skiles",
-        "email": "Telly.Hoeger@billy.biz",
-        "website": "elvis.io"
-      }, {
-        "id": 8,
-        "name": "Nicholas Runolfsdottir V",
-        "username": "Maxime_Nienow",
-        "email": "Sherwood@rosamond.me",
-        "website": "jacynthe.com"
-      }, {
-        "id": 9,
-        "name": "Glenna Reichert",
-        "username": "Delphine",
-        "email": "Chaim_McDermott@dana.io",
-        "website": "conrad.com"
-      }, {
-        "id": 10,
-        "name": "Clementina DuBuque",
-        "username": "Moriah.Stanton",
-        "email": "Rey.Padberg@karina.biz",
-        "website": "ambrose.net"
-      }]
+      colorx: 'success'
     };
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************/
-/*! exports provided: default */
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=template&id=28147c23&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=template&id=28147c23& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _datum_views_currencies_CurrencyMarket_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/datum/views/currencies/CurrencyMarket.vue */ "./resources/js/src/datum/views/currencies/CurrencyMarket.vue");
-/* harmony import */ var _datum_views_currencies_CurrencyChart_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/datum/views/currencies/CurrencyChart.vue */ "./resources/js/src/datum/views/currencies/CurrencyChart.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { attrs: { id: "tabs-demo" } },
+    [
+      _c("tabs-default"),
+      _vm._v(" "),
+      _c("tabs-color"),
+      _vm._v(" "),
+      _c("tabs-alignments"),
+      _vm._v(" "),
+      _c("tabs-position"),
+      _vm._v(" "),
+      _c("tabs-icons")
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
 
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    CurrencyMarket: _datum_views_currencies_CurrencyMarket_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    CurrencyChart: _datum_views_currencies_CurrencyChart_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=1&lang=scss&":
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=1&lang=scss& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "@media print {\n.currencydetail-page * {\n    visibility: hidden;\n}\n[dir] .currencydetail-page #content-area {\n    margin: 0 !important;\n}\n.currencydetail-page #currencydetail-container,\n.currencydetail-page #currencydetail-container * {\n    visibility: visible;\n}\n.currencydetail-page #currencydetail-container {\n    position: absolute;\n    top: 0;\n}\n[dir] .currencydetail-page #currencydetail-container {\n    box-shadow: none;\n}\n[dir=ltr] .currencydetail-page #currencydetail-container {\n    left: 0;\n}\n[dir=rtl] .currencydetail-page #currencydetail-container {\n    right: 0;\n}\n}", ""]);
-
-// exports
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=style&index=0&lang=scss&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=style&index=0&lang=scss& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "[dir] .con-ul-tabs {\n  margin: 0px 20px;\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=0&lang=css&":
-/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=0&lang=css& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "[dir] .sub-item {\n  margin: 15px 0px;\n  border-bottom: 1px solid black;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=1&lang=scss&":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=1&lang=scss& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyDetail.vue?vue&type=style&index=1&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=1&lang=scss&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=style&index=0&lang=scss&":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=style&index=0&lang=scss& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyTab.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=style&index=0&lang=scss&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=0&lang=css&":
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=0&lang=css& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader??ref--7-1!../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyDetail.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=0&lang=css&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=template&id=be027c12&":
-/*!********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=template&id=be027c12& ***!
-  \********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsAlignments.vue?vue&type=template&id=1c8eb973&":
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/components/vuesax/tabs/TabsAlignments.vue?vue&type=template&id=1c8eb973& ***!
+  \***************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -537,22 +226,117 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "vx-card",
-    { attrs: { title: "Line Chart", "code-toggler": "" } },
+    { attrs: { title: "Alignments", "code-toggler": "" } },
     [
-      _c("vue-apex-charts", {
-        attrs: {
-          type: "line",
-          height: "350",
-          options: _vm.apexChatData.lineChartSimple.chartOptions,
-          series: _vm.apexChatData.lineChartSimple.series
-        }
+      _c("p", [
+        _vm._v(
+          "Change the alignment of the buttons with the property alignments. Allowed values are:"
+        )
+      ]),
+      _vm._v(" "),
+      _c("vx-list", {
+        staticClass: "mt-3",
+        attrs: { list: ["center", "right", "fixed"] }
       }),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mt-5" },
+        [
+          _c("h6", { staticClass: "mb-3" }, [_vm._v(" Default ")]),
+          _vm._v(" "),
+          _c(
+            "vs-tabs",
+            [
+              _c("vs-tab", { attrs: { label: "Home" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Documents" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Contributors" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Ecosystem" } }, [_c("div")])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mt-5" },
+        [
+          _c("h6", { staticClass: "mb-3" }, [_vm._v(" Center ")]),
+          _vm._v(" "),
+          _c(
+            "vs-tabs",
+            { attrs: { alignment: "center" } },
+            [
+              _c("vs-tab", { attrs: { label: "Home" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Documents" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Contributors" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Ecosystem" } }, [_c("div")])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mt-5" },
+        [
+          _c("h6", { staticClass: "mb-3" }, [_vm._v(" Right ")]),
+          _vm._v(" "),
+          _c(
+            "vs-tabs",
+            { attrs: { alignment: "right" } },
+            [
+              _c("vs-tab", { attrs: { label: "Home" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Documents" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Contributors" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Ecosystem" } }, [_c("div")])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mt-5" },
+        [
+          _c("h6", { staticClass: "mb-3" }, [_vm._v(" Fixed ")]),
+          _vm._v(" "),
+          _c(
+            "vs-tabs",
+            { attrs: { alignment: "fixed" } },
+            [
+              _c("vs-tab", { attrs: { label: "Home" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Documents" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Contributors" } }, [_c("div")]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Ecosystem" } }, [_c("div")])
+            ],
+            1
+          )
+        ],
+        1
+      ),
       _vm._v(" "),
       _c("template", { slot: "codeContainer" }, [
         _vm._v(
-          "\n            " +
-            _vm._s(_vm.apexChatData.lineChartSimpleCode) +
-            "\n    "
+          '\n<template>\n  <div class="mt-5">\n    <h3> Default </h3>\n    <vs-tabs>\n      <vs-tab label="Home">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Documents">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Contributors">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Ecosystem">\n        <div></div>\n      </vs-tab>\n    </vs-tabs>\n  </div>\n\n  <div class="mt-5">\n    <h3> Center </h3>\n    <vs-tabs alignment="center">\n      <vs-tab label="Home">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Documents">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Contributors">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Ecosystem">\n        <div></div>\n      </vs-tab>\n    </vs-tabs>\n  </div>\n\n  <div class="mt-5">\n    <h3> Right </h3>\n    <vs-tabs alignment="right">\n      <vs-tab label="Home">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Documents">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Contributors">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Ecosystem">\n        <div></div>\n      </vs-tab>\n    </vs-tabs>\n  </div>\n\n  <div class="mt-5">\n    <h3> Fixed </h3>\n    <vs-tabs alignment="fixed">\n      <vs-tab label="Home">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Documents">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Contributors">\n        <div></div>\n      </vs-tab>\n      <vs-tab label="Ecosystem">\n        <div></div>\n      </vs-tab>\n    </vs-tabs>\n  </div>\n</template>\n        '
         )
       ])
     ],
@@ -566,131 +350,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=template&id=4d7497f0&":
-/*!*********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=template&id=4d7497f0& ***!
-  \*********************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { attrs: { id: "currencydetail-page" } },
-    [
-      _c(
-        "vx-card",
-        { attrs: { id: "currencydetail-container" } },
-        [
-          _c(
-            "div",
-            {
-              staticClass: "vx-row leading-loose p-base",
-              staticStyle: { "border-bottom": "1px" }
-            },
-            [
-              _c("div", { staticClass: "vx-col w-full md:w-3/4" }, [
-                _c("div", { staticClass: "flex items-center" }, [
-                  _c("div", {}, [
-                    _c("img", { attrs: { src: "/images/coins/bitcoin.png" } })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "ml-8" }, [
-                    _c("h2", [_vm._v("BitCoin")]),
-                    _vm._v(" "),
-                    _c("small", [_vm._v("BTC")])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "vx-col w-full md:w-1/4 text-right" }, [
-                _c("h1", [_vm._v("$715914")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "invoice__invoice-detail mt-6" }, [
-                  _c("h6", [_vm._v("-0.84%")])
-                ])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "vx-row leading-loose p-base" }, [
-            _c("div", { staticClass: "vx-col w-full md:w-2/3" }, [
-              _c("h5", [_vm._v("Summary")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "invoice__recipient-info my-4" }, [
-                _c("p", [
-                  _vm._v(
-                    "Bitcoin (₿) (BTC) is a decentralized virtual digital currency that can be sent between users through the Bitcoin peer-to-peer network, without the need for intermediaries like banks or governments. It was the first example of a cryptocurrency, a growing asset class that shares some characteristics of traditional currencies, but has verification based on cryptography."
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "The term ‘Bitcoin’ can refer to the token (a snippet of code that represents ownership of a digital value) or it can refer to the technology (a distributed network that maintains the ledger of balances of the Bitcoin token)."
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "The idea for Bitcoin and blockchain was first published in an online cryptography forum in November 2008, by an anonymous person (or group) called Satoshi Nakamoto. The white paper, entitled ‘Bitcoin: A Peer-to-Peer Electronic Cash System’ outlined an electronic payment system based on mathematical proof, and explained how the different parts of the Bitcoin protocol would operate and be kept secure. It further described how a new type of database called a blockchain would keep track of the history of all Bitcoin transactions, and be maintained by everyone in the network."
-                  )
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "vx-col w-full md:w-1/3 text-right" }, [
-              _c("div", { staticClass: "flex justify-between sub-item" }, [
-                _c("span", [_vm._v("Market Cap")]),
-                _vm._v(" "),
-                _c("div", [_vm._v("$131.32B  -0.76%")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex justify-between  sub-item" }, [
-                _c("span", [_vm._v("Volumn")]),
-                _vm._v(" "),
-                _c("div", [_vm._v("$8.48B -13.14%")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex justify-between  sub-item" }, [
-                _c("span", [_vm._v("Circulating Supply")]),
-                _vm._v(" "),
-                _c("div", [_vm._v("18,079,675")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex justify-between  sub-item" }, [
-                _c("span", [_vm._v("Max Supply")]),
-                _vm._v(" "),
-                _c("div", [_vm._v("21,000,000")])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("currency-tab")
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=template&id=59a24273&":
-/*!*********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=template&id=59a24273& ***!
-  \*********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=template&id=26dd0db0&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=template&id=26dd0db0& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -704,92 +367,187 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "vx-card",
-    { attrs: { title: "Filter and Sorter" } },
+    { attrs: { title: "Color", "code-toggler": "" } },
     [
       _c("p", [
-        _vm._v("You can add the Filter functionality by adding the "),
-        _c("code", [_vm._v("search")]),
-        _vm._v(" property.")
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v("if you need a property to be sorted you just have to add the "),
-        _c("code", [_vm._v("sort-key")]),
-        _vm._v(" property and the value you need to be sorted.")
+        _vm._v(
+          "You can change the color of the component with the property color, the parameter allows the main colors and HEX or RGB"
+        )
       ]),
       _vm._v(" "),
       _c(
-        "vs-table",
+        "vs-alert",
         {
-          attrs: {
-            pagination: "",
-            "max-items": 4,
-            search: "",
-            data: _vm.users
-          },
-          scopedSlots: _vm._u([
-            {
-              key: "default",
-              fn: function(ref) {
-                var data = ref.data
-                return _vm._l(data, function(tr, indextr) {
-                  return _c(
-                    "vs-tr",
-                    { key: indextr },
-                    [
-                      _c("vs-td", { attrs: { data: data[indextr].email } }, [
-                        _vm._v(
-                          "\n                    " +
-                            _vm._s(data[indextr].email) +
-                            "\n                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("vs-td", { attrs: { data: data[indextr].username } }, [
-                        _vm._v(
-                          "\n                    " +
-                            _vm._s(data[indextr].username) +
-                            "\n                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("vs-td", { attrs: { data: data[indextr].id } }, [
-                        _vm._v(
-                          "\n                    " +
-                            _vm._s(data[indextr].id) +
-                            "\n                "
-                        )
-                      ])
-                    ],
-                    1
-                  )
-                })
-              }
-            }
-          ])
+          staticClass: "mt-5",
+          attrs: { icon: "warning", active: "true", color: "warning" }
         },
         [
+          _c("span", [
+            _vm._v("Only "),
+            _c("strong", [_vm._v("RGB")]),
+            _vm._v(" and "),
+            _c("strong", [_vm._v("HEX")]),
+            _vm._v(" colors are supported.")
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mt-5" },
+        [
           _c(
-            "template",
-            { slot: "thead" },
+            "vs-tabs",
+            { attrs: { color: _vm.colorx } },
             [
-              _c("vs-th", { attrs: { "sort-key": "email" } }, [
-                _vm._v("Email")
-              ]),
+              _c(
+                "vs-tab",
+                {
+                  attrs: { label: "Success" },
+                  on: {
+                    click: function($event) {
+                      _vm.colorx = "success"
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "con-tab-ejemplo" }, [
+                    _c("p", [
+                      _vm._v(
+                        "Muffin cupcake candy chocolate cake gummi bears fruitcake donut dessert pie. Wafer toffee bonbon dragée. Jujubes cotton candy gummies chupa chups. Sweet fruitcake cheesecake biscuit cotton candy. Cookie powder marshmallow donut. Candy cookie sweet roll bear claw sweet roll. Cake tiramisu cotton candy gingerbread cheesecake toffee cake. Cookie liquorice dessert candy canes jelly."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "mt-2" }, [
+                      _vm._v(
+                        "Sweet chocolate muffin fruitcake gummies jujubes pie lollipop. Brownie marshmallow caramels gingerbread jelly beans chocolate bar oat cake wafer. Chocolate bar danish icing sweet apple pie jelly-o carrot cake cookie cake. "
+                      )
+                    ])
+                  ])
+                ]
+              ),
               _vm._v(" "),
-              _c("vs-th", { attrs: { "sort-key": "username" } }, [
-                _vm._v("Name")
-              ]),
+              _c(
+                "vs-tab",
+                {
+                  attrs: { label: "Danger" },
+                  on: {
+                    click: function($event) {
+                      _vm.colorx = "danger"
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "con-tab-ejemplo" }, [
+                    _c("p", [
+                      _vm._v(
+                        "Biscuit macaroon sugar plum sesame snaps oat cake halvah fruitcake pudding cotton candy. Cheesecake tart wafer soufflé. Chocolate marzipan donut pie soufflé dragée cheesecake. Gummi bears dessert croissant chocolate jujubes fruitcake. Pie cupcake halvah. "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "mt-2" }, [
+                      _vm._v(
+                        "Tiramisu carrot cake marzipan sugar plum powder marzipan sugar plum bonbon powder. Macaroon jujubes ice cream sugar plum lollipop wafer caramels. Cheesecake chocolate tart cake gingerbread fruitcake cake candy jelly-o. Candy cookie lollipop. Wafer lemon drops chocolate cake gummi bears."
+                      )
+                    ])
+                  ])
+                ]
+              ),
               _vm._v(" "),
-              _c("vs-th", { attrs: { "sort-key": "id" } }, [_vm._v("Nro")])
+              _c(
+                "vs-tab",
+                {
+                  attrs: { label: "Warning" },
+                  on: {
+                    click: function($event) {
+                      _vm.colorx = "warning"
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "con-tab-ejemplo" }, [
+                    _c("p", [
+                      _vm._v(
+                        "Brownie ice cream biscuit candy biscuit jujubes. Dessert cake gummies fruitcake chocolate cake sweet roll pastry croissant danish. Pudding chocolate bar sweet roll muffin cake tootsie roll biscuit pastry. Chupa chups dessert donut. Pastry gummi bears tart cookie apple pie sugar plum bear claw."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "mt-2" }, [
+                      _vm._v(
+                        "Pudding jelly chocolate powder jelly beans icing candy soufflé sweet. Cotton candy sugar plum fruitcake dessert dragée. Toffee chocolate cake chocolate cake oat cake topping macaroon caramels cotton candy. Ice cream lemon drops lollipop."
+                      )
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-tab",
+                {
+                  attrs: { label: "Dark" },
+                  on: {
+                    click: function($event) {
+                      _vm.colorx = "dark"
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "con-tab-ejemplo" }, [
+                    _c("p", [
+                      _vm._v(
+                        "Chocolate powder candy canes cake gummies tart donut. Gummi bears sesame snaps bonbon apple pie carrot cake croissant marzipan candy canes jelly-o. Marshmallow sweet cake gummies ice cream toffee. Jelly gingerbread jelly beans tart tart. Jelly-o bonbon jelly-o lemon drops sweet roll jujubes cake. Chocolate cake dessert sugar plum."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "mt-2" }, [
+                      _vm._v(
+                        "Jelly beans brownie chocolate bar. Jujubes lemon drops apple pie chocolate cake bear claw cupcake chocolate sweet pastry. Pastry carrot cake liquorice. Sesame snaps sugar plum chupa chups tiramisu. Halvah cake chocolate bar jelly beans dragée chocolate halvah pudding pudding."
+                      )
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-tab",
+                {
+                  attrs: { label: "RGB | HEX" },
+                  on: {
+                    click: function($event) {
+                      _vm.colorx = "rgb(16, 233, 179)"
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "con-tab-ejemplo" }, [
+                    _c("p", [
+                      _vm._v(
+                        "Gingerbread tart marzipan sweet lemon drops wafer soufflé apple pie lemon drops. Cake pie apple pie icing fruitcake liquorice dessert sugar plum liquorice. Cake liquorice sugar plum cake croissant sweet. Jelly beans donut dessert. Cake jelly-o marzipan candy canes biscuit jelly toffee. Gummi bears jelly-o pastry macaroon gummies gingerbread liquorice bonbon chocolate cake."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "mt-2" }, [
+                      _vm._v(
+                        "Dragée muffin lemon drops. Cake sweet tootsie roll cupcake cake sugar plum lemon drops. Pudding gingerbread sesame snaps sweet. Gummi bears gingerbread pastry cotton candy sesame snaps toffee. Cake chocolate bonbon marzipan jelly-o powder. Cupcake jujubes fruitcake oat cake powder caramels."
+                      )
+                    ])
+                  ])
+                ]
+              )
             ],
             1
           )
         ],
-        2
-      )
+        1
+      ),
+      _vm._v(" "),
+      _c("template", { slot: "codeContainer" }, [
+        _vm._v(
+          '\n<template>\n  <vs-tabs :color="colorx">\n    <vs-tab @click="colorx = \'success\'" label="Success">\n      <div class="con-tab-ejemplo">\n      <span>Jujubes ....</span></div>\n    </vs-tab>\n\n    <vs-tab @click="colorx = \'danger\'" label="Danger">\n      <div class="con-tab-ejemplo">\n      <span>Halvah ...</span></div>\n    </vs-tab>\n\n    <vs-tab @click="colorx = \'warning\'" label="Warning">\n      <div class="con-tab-ejemplo">\n      <span>Chocolate ....</span></div>\n    </vs-tab>\n\n    <vs-tab @click="colorx = \'dark\'" label="Dark">\n      <div class="con-tab-ejemplo">\n      <span>Macaroon ....</span></div>\n    </vs-tab>\n\n    <vs-tab @click="colorx = \'rgb(16, 233, 179)\'" label="RGB | HEX">\n      <div class="con-tab-ejemplo">\n      <span>Cupcake ....</span></div>\n    </vs-tab>\n  </vs-tabs>\n</template>\n\n<script>\nexport default {\n  data:()=>({\n    colorx:\'success\'\n  }),\n}\n</script>\n        '
+        )
+      ])
     ],
-    1
+    2
   )
 }
 var staticRenderFns = []
@@ -799,10 +557,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=template&id=594cbb24&":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=template&id=594cbb24& ***!
-  \******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsDefault.vue?vue&type=template&id=63a2c764&":
+/*!************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/components/vuesax/tabs/TabsDefault.vue?vue&type=template&id=63a2c764& ***!
+  \************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -815,38 +573,134 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
-    { staticClass: "mt-5" },
+    "vx-card",
+    { attrs: { title: "Default", "code-toggler": "" } },
     [
+      _c("p", [
+        _vm._v("To implement a tabs, use the "),
+        _c("code", [_vm._v("vs-tabs")]),
+        _vm._v(" component. It must include "),
+        _c("code", [_vm._v("vs-tab")]),
+        _vm._v(" child components that represent each tab")
+      ]),
+      _vm._v(" "),
       _c(
-        "vs-tabs",
-        { attrs: { color: "rgb(201, 32, 178)" } },
+        "vs-alert",
+        {
+          staticClass: "mt-5",
+          attrs: { color: "primary", icon: "new_releases", active: "true" }
+        },
+        [
+          _c("p", [
+            _vm._v("For the title of each tab the "),
+            _c("code", [_vm._v("label")]),
+            _vm._v(" property is implemented in the "),
+            _c("code", [_vm._v("vs-tab")]),
+            _vm._v(" component")
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mt-5" },
         [
           _c(
-            "vs-tab",
-            { attrs: { label: "Markets" } },
-            [_c("CurrencyMarket")],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "vs-tab",
-            { attrs: { label: "Charts" } },
-            [_c("CurrencyChart")],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "vs-tab",
-            { attrs: { label: "Historical Data" } },
-            [_c("CurrencyMarket")],
+            "vs-tabs",
+            [
+              _c("vs-tab", { attrs: { label: "Home" } }, [
+                _c("div", { staticClass: "tab-text" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Muffin cupcake candy chocolate cake gummi bears fruitcake donut dessert pie. Wafer toffee bonbon dragée. Jujubes cotton candy gummies chupa chups. Sweet fruitcake cheesecake biscuit cotton candy. Cookie powder marshmallow donut. Candy cookie sweet roll bear claw sweet roll. Cake tiramisu cotton candy gingerbread cheesecake toffee cake. Cookie liquorice dessert candy canes jelly."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "mt-2" }, [
+                    _vm._v(
+                      "Sweet chocolate muffin fruitcake gummies jujubes pie lollipop. Brownie marshmallow caramels gingerbread jelly beans chocolate bar oat cake wafer. Chocolate bar danish icing sweet apple pie jelly-o carrot cake cookie cake. "
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Service" } }, [
+                _c("div", { staticClass: "tab-text" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Biscuit macaroon sugar plum sesame snaps oat cake halvah fruitcake pudding cotton candy. Cheesecake tart wafer soufflé. Chocolate marzipan donut pie soufflé dragée cheesecake. Gummi bears dessert croissant chocolate jujubes fruitcake. Pie cupcake halvah. "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "mt-2" }, [
+                    _vm._v(
+                      "Tiramisu carrot cake marzipan sugar plum powder marzipan sugar plum bonbon powder. Macaroon jujubes ice cream sugar plum lollipop wafer caramels. Cheesecake chocolate tart cake gingerbread fruitcake cake candy jelly-o. Candy cookie lollipop. Wafer lemon drops chocolate cake gummi bears."
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "login" } }, [
+                _c("div", { staticClass: "tab-text" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Brownie ice cream biscuit candy biscuit jujubes. Dessert cake gummies fruitcake chocolate cake sweet roll pastry croissant danish. Pudding chocolate bar sweet roll muffin cake tootsie roll biscuit pastry. Chupa chups dessert donut. Pastry gummi bears tart cookie apple pie sugar plum bear claw."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "mt-2" }, [
+                    _vm._v(
+                      "Pudding jelly chocolate powder jelly beans icing candy soufflé sweet. Cotton candy sugar plum fruitcake dessert dragée. Toffee chocolate cake chocolate cake oat cake topping macaroon caramels cotton candy. Ice cream lemon drops lollipop."
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { disabled: "", label: "Disabled" } }, [
+                _c("div", { staticClass: "tab-text" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Chocolate powder candy canes cake gummies tart donut. Gummi bears sesame snaps bonbon apple pie carrot cake croissant marzipan candy canes jelly-o. Marshmallow sweet cake gummies ice cream toffee. Jelly gingerbread jelly beans tart tart. Jelly-o bonbon jelly-o lemon drops sweet roll jujubes cake. Chocolate cake dessert sugar plum."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "mt-2" }, [
+                    _vm._v(
+                      "Jelly beans brownie chocolate bar. Jujubes lemon drops apple pie chocolate cake bear claw cupcake chocolate sweet pastry. Pastry carrot cake liquorice. Sesame snaps sugar plum chupa chups tiramisu. Halvah cake chocolate bar jelly beans dragée chocolate halvah pudding pudding."
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("vs-tab", { attrs: { label: "Account" } }, [
+                _c("div", { staticClass: "tab-text" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Gingerbread tart marzipan sweet lemon drops wafer soufflé apple pie lemon drops. Cake pie apple pie icing fruitcake liquorice dessert sugar plum liquorice. Cake liquorice sugar plum cake croissant sweet. Jelly beans donut dessert. Cake jelly-o marzipan candy canes biscuit jelly toffee. Gummi bears jelly-o pastry macaroon gummies gingerbread liquorice bonbon chocolate cake."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "mt-2" }, [
+                    _vm._v(
+                      "Dragée muffin lemon drops. Cake sweet tootsie roll cupcake cake sugar plum lemon drops. Pudding gingerbread sesame snaps sweet. Gummi bears gingerbread pastry cotton candy sesame snaps toffee. Cake chocolate bonbon marzipan jelly-o powder. Cupcake jujubes fruitcake oat cake powder caramels."
+                    )
+                  ])
+                ])
+              ])
+            ],
             1
           )
         ],
         1
-      )
+      ),
+      _vm._v(" "),
+      _c("template", { slot: "codeContainer" }, [
+        _vm._v(
+          '\n<vs-tabs>\n  <vs-tab label="Home">\n    <div class="tab-text">\n      <span>Jujubes ....</span>\n    </div>\n  </vs-tab>\n  <vs-tab label="Service">\n    <div class="tab-text">\n      <span>Halvah ...</span>\n    </div>\n  </vs-tab>\n  <vs-tab label="login">\n    <div class="tab-text">\n      <span>Chocolate ....</span>\n    </div>\n  </vs-tab>\n  <vs-tab disabled label="Disabled">\n    <div class="tab-text">\n      <span>Macaroon ....</span>\n    </div>\n  </vs-tab>\n  <vs-tab label="Account">\n    <div class="tab-text">\n      <span>Cupcake ....</span>\n    </div>\n  </vs-tab>\n</vs-tabs>\n        '
+        )
+      ])
     ],
-    1
+    2
   )
 }
 var staticRenderFns = []
@@ -856,18 +710,360 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyChart.vue":
-/*!*******************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyChart.vue ***!
-  \*******************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsIcons.vue?vue&type=template&id=5ef57de7&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/components/vuesax/tabs/TabsIcons.vue?vue&type=template&id=5ef57de7& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "vx-card",
+    { attrs: { title: "Icons", "code-toggler": "" } },
+    [
+      _c(
+        "vs-tabs",
+        [
+          _c("vs-tab", {
+            attrs: { label: "Home", "icon-pack": "feather", icon: "icon-home" }
+          }),
+          _vm._v(" "),
+          _c("vs-tab", {
+            attrs: { label: "Box", "icon-pack": "feather", icon: "icon-box" }
+          }),
+          _vm._v(" "),
+          _c("vs-tab", {
+            attrs: { label: "Mail", "icon-pack": "feather", icon: "icon-mail" }
+          }),
+          _vm._v(" "),
+          _c("vs-tab", {
+            attrs: {
+              label: "Heart",
+              "icon-pack": "feather",
+              icon: "icon-heart"
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("template", { slot: "codeContainer" }, [
+        _vm._v(
+          '\n<template lang="html">\n  <vs-tabs>\n    <vs-tab label="Home" icon-pack="feather" icon="icon-home">\n    </vs-tab>\n    <vs-tab label="Box" icon-pack="feather" icon="icon-box">\n    </vs-tab>\n    <vs-tab label="Mail" icon-pack="feather" icon="icon-mail">\n    </vs-tab>\n    <vs-tab label="Heart" icon-pack="feather" icon="icon-heart">\n    </vs-tab>\n  </vs-tabs>\n</template>\n    '
+        )
+      ])
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsPosition.vue?vue&type=template&id=230ef1ec&":
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/components/vuesax/tabs/TabsPosition.vue?vue&type=template&id=230ef1ec& ***!
+  \*************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "vx-card",
+    { attrs: { title: "Position", "code-toggler": "" } },
+    [
+      _c("p", [
+        _vm._v("You can change the position of the menu with the property "),
+        _c("code", [_vm._v("position")]),
+        _vm._v(" that as a value you can have: "),
+        _c("code", [_vm._v("top")]),
+        _vm._v(", "),
+        _c("code", [_vm._v("right")]),
+        _vm._v(", "),
+        _c("code", [_vm._v("bottom")]),
+        _vm._v(", "),
+        _c("code", [_vm._v("left")])
+      ]),
+      _vm._v(" "),
+      _c(
+        "vs-alert",
+        {
+          staticClass: "mt-5",
+          attrs: { color: "primary", icon: "new_releases", active: "true" }
+        },
+        [
+          _c("p", [
+            _vm._v("For the title of each tab the "),
+            _c("code", [_vm._v("label")]),
+            _vm._v(" property is implemented in the "),
+            _c("code", [_vm._v("vs-tab")]),
+            _vm._v(" component")
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mt-5" },
+        [
+          _c(
+            "vs-tabs",
+            { attrs: { color: "rgb(32, 201, 192)" } },
+            [
+              _c(
+                "vs-tab",
+                { attrs: { label: "Top" } },
+                [
+                  _c(
+                    "vs-tabs",
+                    { attrs: { color: "rgb(201, 32, 178)" } },
+                    [
+                      _c("vs-tab", { attrs: { label: "Home" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Jujubes gingerbread cake pastry biscuit jelly-o marshmallow. Chocolate cake jelly marshmallow topping. Danish caramels gummies tootsie roll marshmallow sweet croissant."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("vs-tab", { attrs: { label: "Service" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Halvah dessert fruitcake toffee oat cake tart oat cake topping jelly beans. Pudding sweet pie pastry lemon drops jujubes danish pie gingerbread. Liquorice powder wafer."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("vs-tab", { attrs: { label: "login" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Chocolate icing pie danish gummies. Dragée gummies toffee muffin chocolate bar marshmallow. Marshmallow chupa chups muffin cake icing pastry wafer."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "vs-tab",
+                        { attrs: { disabled: "", label: "Disabled" } },
+                        [
+                          _c("span", [
+                            _vm._v(
+                              "Macaroon icing lemon drops jelly-o. Bonbon pie tart chocolate bar pastry. Sugar plum bonbon candy canes dragée toffee dragée toffee."
+                            )
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-tab",
+                { attrs: { label: "Right" } },
+                [
+                  _c(
+                    "vs-tabs",
+                    { attrs: { position: "right", color: "rgb(29, 55, 194)" } },
+                    [
+                      _c("vs-tab", { attrs: { label: "Home" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Jujubes gingerbread cake pastry biscuit jelly-o marshmallow. Chocolate cake jelly marshmallow topping. Danish caramels gummies tootsie roll marshmallow sweet croissant."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("vs-tab", { attrs: { label: "Service" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Halvah dessert fruitcake toffee oat cake tart oat cake topping jelly beans. Pudding sweet pie pastry lemon drops jujubes danish pie gingerbread. Liquorice powder wafer."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("vs-tab", { attrs: { label: "login" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Chocolate icing pie danish gummies. Dragée gummies toffee muffin chocolate bar marshmallow. Marshmallow chupa chups muffin cake icing pastry wafer."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "vs-tab",
+                        { attrs: { disabled: "", label: "Disabled" } },
+                        [
+                          _c("span", [
+                            _vm._v(
+                              "Macaroon icing lemon drops jelly-o. Bonbon pie tart chocolate bar pastry. Sugar plum bonbon candy canes dragée toffee dragée toffee."
+                            )
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-tab",
+                { attrs: { label: "Bottom" } },
+                [
+                  _c(
+                    "vs-tabs",
+                    {
+                      attrs: { position: "bottom", color: "rgb(29, 55, 194)" }
+                    },
+                    [
+                      _c("vs-tab", { attrs: { label: "Home" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Jujubes gingerbread cake pastry biscuit jelly-o marshmallow. Chocolate cake jelly marshmallow topping. Danish caramels gummies tootsie roll marshmallow sweet croissant."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("vs-tab", { attrs: { label: "Service" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Halvah dessert fruitcake toffee oat cake tart oat cake topping jelly beans. Pudding sweet pie pastry lemon drops jujubes danish pie gingerbread. Liquorice powder wafer."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("vs-tab", { attrs: { label: "login" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Chocolate icing pie danish gummies. Dragée gummies toffee muffin chocolate bar marshmallow. Marshmallow chupa chups muffin cake icing pastry wafer."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "vs-tab",
+                        { attrs: { disabled: true, label: "Disabled" } },
+                        [
+                          _c("span", [
+                            _vm._v(
+                              "Macaroon icing lemon drops jelly-o. Bonbon pie tart chocolate bar pastry. Sugar plum bonbon candy canes dragée toffee dragée toffee."
+                            )
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "vs-tab",
+                { attrs: { label: "Left" } },
+                [
+                  _c(
+                    "vs-tabs",
+                    { attrs: { position: "left", color: "danger" } },
+                    [
+                      _c("vs-tab", { attrs: { label: "Home" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Jujubes gingerbread cake pastry biscuit jelly-o marshmallow. Chocolate cake jelly marshmallow topping. Danish caramels gummies tootsie roll marshmallow sweet croissant."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("vs-tab", { attrs: { label: "Service" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Halvah dessert fruitcake toffee oat cake tart oat cake topping jelly beans. Pudding sweet pie pastry lemon drops jujubes danish pie gingerbread. Liquorice powder wafer."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("vs-tab", { attrs: { label: "login" } }, [
+                        _c("span", [
+                          _vm._v(
+                            "Chocolate icing pie danish gummies. Dragée gummies toffee muffin chocolate bar marshmallow. Marshmallow chupa chups muffin cake icing pastry wafer."
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "vs-tab",
+                        { attrs: { disabled: true, label: "Disabled" } },
+                        [
+                          _c("span", [
+                            _vm._v(
+                              "Macaroon icing lemon drops jelly-o. Bonbon pie tart chocolate bar pastry. Sugar plum bonbon candy canes dragée toffee dragée toffee."
+                            )
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("template", { slot: "codeContainer" }, [
+        _vm._v(
+          '\n<template>\n  <div>\n    <vs-tabs color="rgb(32, 201, 192)">\n\n      <vs-tab label="Top">\n        <!-- top -->\n        <vs-tabs color="rgb(201, 32, 178)">\n          <vs-tab label="Home">\n            <span>Jujubes ....</span>\n          </vs-tab>\n          <vs-tab label="Service">\n            <span>Halvah ....</span>\n          </vs-tab>\n          <vs-tab label="login">\n            <span>Chocolate .....</span>\n          </vs-tab>\n          <vs-tab disabled label="Disabled">\n            <span>Macaroon ......</span>\n          </vs-tab>\n        </vs-tabs>\n      </vs-tab>\n\n      <vs-tab label="Right">\n        <!-- right -->\n        <vs-tabs position="right" color="rgb(29, 55, 194)">\n          <vs-tab label="Home">\n            <span>Jujubes ....</span>\n          </vs-tab>\n          <vs-tab label="Service">\n            <span>Halvah ....</span>\n          </vs-tab>\n          <vs-tab label="login">\n            <span>Chocolate .....</span>\n          </vs-tab>\n          <vs-tab disabled label="Disabled">\n            <span>Macaroon ......</span>\n          </vs-tab>\n        </vs-tabs>\n      </vs-tab>\n\n      <vs-tab label="Bottom">\n        <!-- bottom -->\n        <vs-tabs position="bottom" color="rgb(29, 55, 194)">\n          <vs-tab label="Home">\n            <span>Jujubes ....</span>\n          </vs-tab>\n          <vs-tab label="Service">\n            <span>Halvah ....</span>\n          </vs-tab>\n          <vs-tab label="login">\n            <span>Chocolate .....</span>\n          </vs-tab>\n          <vs-tab :disabled="true" label="Disabled">\n            <div>Macaroon .....</div>\n          </vs-tab>\n        </vs-tabs>\n      </vs-tab>\n\n      <vs-tab label="Left">\n        <!-- left -->\n        <vs-tabs position="left" color="danger">\n          <vs-tab label="Home">\n            <span>Jujubes ....</span>\n          </vs-tab>\n          <vs-tab label="Service">\n            <span>Halvah ....</span>\n          </vs-tab>\n          <vs-tab label="login">\n            <span>Chocolate .....</span>\n          </vs-tab>\n          <vs-tab :disabled="true" label="Disabled">\n            <div>Macaroon .....</div>\n          </vs-tab>\n        </vs-tabs>\n      </vs-tab>\n    </vs-tabs>\n  </div>\n</template>\n        '
+        )
+      ])
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./resources/js/src/views/components/vuesax/tabs/Tabs.vue":
+/*!****************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/Tabs.vue ***!
+  \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CurrencyChart_vue_vue_type_template_id_be027c12___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CurrencyChart.vue?vue&type=template&id=be027c12& */ "./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=template&id=be027c12&");
-/* harmony import */ var _CurrencyChart_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CurrencyChart.vue?vue&type=script&lang=js& */ "./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Tabs_vue_vue_type_template_id_28147c23___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tabs.vue?vue&type=template&id=28147c23& */ "./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=template&id=28147c23&");
+/* harmony import */ var _Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tabs.vue?vue&type=script&lang=js& */ "./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -876,9 +1072,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CurrencyChart_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CurrencyChart_vue_vue_type_template_id_be027c12___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CurrencyChart_vue_vue_type_template_id_be027c12___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Tabs_vue_vue_type_template_id_28147c23___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Tabs_vue_vue_type_template_id_28147c23___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -888,59 +1084,108 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/datum/views/currencies/CurrencyChart.vue"
+component.options.__file = "resources/js/src/views/components/vuesax/tabs/Tabs.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************/
+/***/ "./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyChart_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyChart.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyChart_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tabs.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=template&id=be027c12&":
-/*!**************************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=template&id=be027c12& ***!
-  \**************************************************************************************************/
+/***/ "./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=template&id=28147c23&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=template&id=28147c23& ***!
+  \***********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyChart_vue_vue_type_template_id_be027c12___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyChart.vue?vue&type=template&id=be027c12& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyChart.vue?vue&type=template&id=be027c12&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyChart_vue_vue_type_template_id_be027c12___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_28147c23___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Tabs.vue?vue&type=template&id=28147c23& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/Tabs.vue?vue&type=template&id=28147c23&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_28147c23___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyChart_vue_vue_type_template_id_be027c12___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Tabs_vue_vue_type_template_id_28147c23___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue":
-/*!********************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyDetail.vue ***!
-  \********************************************************************/
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsAlignments.vue":
+/*!**************************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsAlignments.vue ***!
+  \**************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CurrencyDetail_vue_vue_type_template_id_4d7497f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CurrencyDetail.vue?vue&type=template&id=4d7497f0& */ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=template&id=4d7497f0&");
-/* harmony import */ var _CurrencyDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CurrencyDetail.vue?vue&type=script&lang=js& */ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _CurrencyDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CurrencyDetail.vue?vue&type=style&index=0&lang=css& */ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _CurrencyDetail_vue_vue_type_style_index_1_lang_scss___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CurrencyDetail.vue?vue&type=style&index=1&lang=scss& */ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=1&lang=scss&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _TabsAlignments_vue_vue_type_template_id_1c8eb973___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TabsAlignments.vue?vue&type=template&id=1c8eb973& */ "./resources/js/src/views/components/vuesax/tabs/TabsAlignments.vue?vue&type=template&id=1c8eb973&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
 
 
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _TabsAlignments_vue_vue_type_template_id_1c8eb973___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TabsAlignments_vue_vue_type_template_id_1c8eb973___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/src/views/components/vuesax/tabs/TabsAlignments.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsAlignments.vue?vue&type=template&id=1c8eb973&":
+/*!*********************************************************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsAlignments.vue?vue&type=template&id=1c8eb973& ***!
+  \*********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsAlignments_vue_vue_type_template_id_1c8eb973___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./TabsAlignments.vue?vue&type=template&id=1c8eb973& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsAlignments.vue?vue&type=template&id=1c8eb973&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsAlignments_vue_vue_type_template_id_1c8eb973___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsAlignments_vue_vue_type_template_id_1c8eb973___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsColor.vue":
+/*!*********************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsColor.vue ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TabsColor_vue_vue_type_template_id_26dd0db0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TabsColor.vue?vue&type=template&id=26dd0db0& */ "./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=template&id=26dd0db0&");
+/* harmony import */ var _TabsColor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TabsColor.vue?vue&type=script&lang=js& */ "./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -948,10 +1193,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
-  _CurrencyDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CurrencyDetail_vue_vue_type_template_id_4d7497f0___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CurrencyDetail_vue_vue_type_template_id_4d7497f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _TabsColor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TabsColor_vue_vue_type_template_id_26dd0db0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TabsColor_vue_vue_type_template_id_26dd0db0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -961,98 +1206,117 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/datum/views/currencies/CurrencyDetail.vue"
+component.options.__file = "resources/js/src/views/components/vuesax/tabs/TabsColor.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************/
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyDetail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsColor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./TabsColor.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsColor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=0&lang=css&":
-/*!*****************************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=0&lang=css& ***!
-  \*****************************************************************************************************/
-/*! no static exports found */
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=template&id=26dd0db0&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=template&id=26dd0db0& ***!
+  \****************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/style-loader!../../../../../../node_modules/css-loader??ref--7-1!../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyDetail.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsColor_vue_vue_type_template_id_26dd0db0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./TabsColor.vue?vue&type=template&id=26dd0db0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsColor.vue?vue&type=template&id=26dd0db0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsColor_vue_vue_type_template_id_26dd0db0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsColor_vue_vue_type_template_id_26dd0db0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=1&lang=scss&":
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsDefault.vue":
+/*!***********************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsDefault.vue ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TabsDefault_vue_vue_type_template_id_63a2c764___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TabsDefault.vue?vue&type=template&id=63a2c764& */ "./resources/js/src/views/components/vuesax/tabs/TabsDefault.vue?vue&type=template&id=63a2c764&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _TabsDefault_vue_vue_type_template_id_63a2c764___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TabsDefault_vue_vue_type_template_id_63a2c764___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/src/views/components/vuesax/tabs/TabsDefault.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsDefault.vue?vue&type=template&id=63a2c764&":
 /*!******************************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=1&lang=scss& ***!
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsDefault.vue?vue&type=template&id=63a2c764& ***!
   \******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_1_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/style-loader!../../../../../../node_modules/css-loader!../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyDetail.vue?vue&type=style&index=1&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=style&index=1&lang=scss&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_1_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_1_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_1_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_1_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_style_index_1_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
-/***/ "./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=template&id=4d7497f0&":
-/*!***************************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=template&id=4d7497f0& ***!
-  \***************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_template_id_4d7497f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyDetail.vue?vue&type=template&id=4d7497f0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyDetail.vue?vue&type=template&id=4d7497f0&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_template_id_4d7497f0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsDefault_vue_vue_type_template_id_63a2c764___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./TabsDefault.vue?vue&type=template&id=63a2c764& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsDefault.vue?vue&type=template&id=63a2c764&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsDefault_vue_vue_type_template_id_63a2c764___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyDetail_vue_vue_type_template_id_4d7497f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsDefault_vue_vue_type_template_id_63a2c764___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyMarket.vue":
-/*!********************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyMarket.vue ***!
-  \********************************************************************/
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsIcons.vue":
+/*!*********************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsIcons.vue ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CurrencyMarket_vue_vue_type_template_id_59a24273___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CurrencyMarket.vue?vue&type=template&id=59a24273& */ "./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=template&id=59a24273&");
-/* harmony import */ var _CurrencyMarket_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CurrencyMarket.vue?vue&type=script&lang=js& */ "./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _TabsIcons_vue_vue_type_template_id_5ef57de7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TabsIcons.vue?vue&type=template&id=5ef57de7& */ "./resources/js/src/views/components/vuesax/tabs/TabsIcons.vue?vue&type=template&id=5ef57de7&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-
-
+var script = {}
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CurrencyMarket_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CurrencyMarket_vue_vue_type_template_id_59a24273___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CurrencyMarket_vue_vue_type_template_id_59a24273___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _TabsIcons_vue_vue_type_template_id_5ef57de7___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TabsIcons_vue_vue_type_template_id_5ef57de7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1062,68 +1326,50 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/datum/views/currencies/CurrencyMarket.vue"
+component.options.__file = "resources/js/src/views/components/vuesax/tabs/TabsIcons.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyMarket_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyMarket.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyMarket_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=template&id=59a24273&":
-/*!***************************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=template&id=59a24273& ***!
-  \***************************************************************************************************/
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsIcons.vue?vue&type=template&id=5ef57de7&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsIcons.vue?vue&type=template&id=5ef57de7& ***!
+  \****************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyMarket_vue_vue_type_template_id_59a24273___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyMarket.vue?vue&type=template&id=59a24273& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyMarket.vue?vue&type=template&id=59a24273&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyMarket_vue_vue_type_template_id_59a24273___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsIcons_vue_vue_type_template_id_5ef57de7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./TabsIcons.vue?vue&type=template&id=5ef57de7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsIcons.vue?vue&type=template&id=5ef57de7&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsIcons_vue_vue_type_template_id_5ef57de7___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyMarket_vue_vue_type_template_id_59a24273___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsIcons_vue_vue_type_template_id_5ef57de7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyTab.vue":
-/*!*****************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyTab.vue ***!
-  \*****************************************************************/
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsPosition.vue":
+/*!************************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsPosition.vue ***!
+  \************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CurrencyTab_vue_vue_type_template_id_594cbb24___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CurrencyTab.vue?vue&type=template&id=594cbb24& */ "./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=template&id=594cbb24&");
-/* harmony import */ var _CurrencyTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CurrencyTab.vue?vue&type=script&lang=js& */ "./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _CurrencyTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CurrencyTab.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _TabsPosition_vue_vue_type_template_id_230ef1ec___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TabsPosition.vue?vue&type=template&id=230ef1ec& */ "./resources/js/src/views/components/vuesax/tabs/TabsPosition.vue?vue&type=template&id=230ef1ec&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-
-
-
+var script = {}
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _CurrencyTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CurrencyTab_vue_vue_type_template_id_594cbb24___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CurrencyTab_vue_vue_type_template_id_594cbb24___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _TabsPosition_vue_vue_type_template_id_230ef1ec___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TabsPosition_vue_vue_type_template_id_230ef1ec___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1133,54 +1379,24 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/datum/views/currencies/CurrencyTab.vue"
+component.options.__file = "resources/js/src/views/components/vuesax/tabs/TabsPosition.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyTab.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=style&index=0&lang=scss&":
-/*!***************************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=style&index=0&lang=scss& ***!
-  \***************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/style-loader!../../../../../../node_modules/css-loader!../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyTab.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
-/***/ "./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=template&id=594cbb24&":
-/*!************************************************************************************************!*\
-  !*** ./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=template&id=594cbb24& ***!
-  \************************************************************************************************/
+/***/ "./resources/js/src/views/components/vuesax/tabs/TabsPosition.vue?vue&type=template&id=230ef1ec&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/src/views/components/vuesax/tabs/TabsPosition.vue?vue&type=template&id=230ef1ec& ***!
+  \*******************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_template_id_594cbb24___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./CurrencyTab.vue?vue&type=template&id=594cbb24& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/datum/views/currencies/CurrencyTab.vue?vue&type=template&id=594cbb24&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_template_id_594cbb24___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsPosition_vue_vue_type_template_id_230ef1ec___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./TabsPosition.vue?vue&type=template&id=230ef1ec& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/components/vuesax/tabs/TabsPosition.vue?vue&type=template&id=230ef1ec&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsPosition_vue_vue_type_template_id_230ef1ec___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CurrencyTab_vue_vue_type_template_id_594cbb24___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TabsPosition_vue_vue_type_template_id_230ef1ec___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

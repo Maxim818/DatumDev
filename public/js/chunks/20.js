@@ -1,14 +1,674 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[20],{
 
-/***/ "./node_modules/vue-perfect-scrollbar/dist/index.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/vue-perfect-scrollbar/dist/index.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./resources/js/src/views/charts-and-maps/charts/apex-charts/apexChartData.js":
+/*!************************************************************************************!*\
+  !*** ./resources/js/src/views/charts-and-maps/charts/apex-charts/apexChartData.js ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports=function(t){function e(o){if(r[o])return r[o].exports;var n=r[o]={i:o,l:!1,exports:{}};return t[o].call(n.exports,n,n.exports,e),n.l=!0,n.exports}var r={};return e.m=t,e.c=r,e.i=function(t){return t},e.d=function(t,r,o){e.o(t,r)||Object.defineProperty(t,r,{configurable:!1,enumerable:!0,get:o})},e.n=function(t){var r=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(r,"a",r),r},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="/dist/",e(e.s=6)}([function(t,e,r){"use strict";function o(t,e){function r(){t.classList.add("ps--focus")}function o(){t.classList.remove("ps--focus")}var n=this;n.settings=a();for(var i in e)n.settings[i]=e[i];n.containerWidth=null,n.containerHeight=null,n.contentWidth=null,n.contentHeight=null,n.isRtl="rtl"===c.css(t,"direction"),n.isNegativeScroll=function(){var e=t.scrollLeft,r=null;return t.scrollLeft=-1,r=t.scrollLeft<0,t.scrollLeft=e,r}(),n.negativeScrollAdjustment=n.isNegativeScroll?t.scrollWidth-t.clientWidth:0,n.event=new u,n.ownerDocument=t.ownerDocument||document,n.scrollbarXRail=c.appendTo(c.create("div","ps__scrollbar-x-rail"),t),n.scrollbarX=c.appendTo(c.create("div","ps__scrollbar-x"),n.scrollbarXRail),n.scrollbarX.setAttribute("tabindex",0),n.event.bind(n.scrollbarX,"focus",r),n.event.bind(n.scrollbarX,"blur",o),n.scrollbarXActive=null,n.scrollbarXWidth=null,n.scrollbarXLeft=null,n.scrollbarXBottom=s.toInt(c.css(n.scrollbarXRail,"bottom")),n.isScrollbarXUsingBottom=n.scrollbarXBottom===n.scrollbarXBottom,n.scrollbarXTop=n.isScrollbarXUsingBottom?null:s.toInt(c.css(n.scrollbarXRail,"top")),n.railBorderXWidth=s.toInt(c.css(n.scrollbarXRail,"borderLeftWidth"))+s.toInt(c.css(n.scrollbarXRail,"borderRightWidth")),c.css(n.scrollbarXRail,"display","block"),n.railXMarginWidth=s.toInt(c.css(n.scrollbarXRail,"marginLeft"))+s.toInt(c.css(n.scrollbarXRail,"marginRight")),c.css(n.scrollbarXRail,"display",""),n.railXWidth=null,n.railXRatio=null,n.scrollbarYRail=c.appendTo(c.create("div","ps__scrollbar-y-rail"),t),n.scrollbarY=c.appendTo(c.create("div","ps__scrollbar-y"),n.scrollbarYRail),n.scrollbarY.setAttribute("tabindex",0),n.event.bind(n.scrollbarY,"focus",r),n.event.bind(n.scrollbarY,"blur",o),n.scrollbarYActive=null,n.scrollbarYHeight=null,n.scrollbarYTop=null,n.scrollbarYRight=s.toInt(c.css(n.scrollbarYRail,"right")),n.isScrollbarYUsingRight=n.scrollbarYRight===n.scrollbarYRight,n.scrollbarYLeft=n.isScrollbarYUsingRight?null:s.toInt(c.css(n.scrollbarYRail,"left")),n.scrollbarYOuterWidth=n.isRtl?s.outerWidth(n.scrollbarY):null,n.railBorderYWidth=s.toInt(c.css(n.scrollbarYRail,"borderTopWidth"))+s.toInt(c.css(n.scrollbarYRail,"borderBottomWidth")),c.css(n.scrollbarYRail,"display","block"),n.railYMarginHeight=s.toInt(c.css(n.scrollbarYRail,"marginTop"))+s.toInt(c.css(n.scrollbarYRail,"marginBottom")),c.css(n.scrollbarYRail,"display",""),n.railYHeight=null,n.railYRatio=null}function n(t){return t.getAttribute("data-ps-id")}function i(t,e){t.setAttribute("data-ps-id",e)}function l(t){t.removeAttribute("data-ps-id")}var s=r(2),a=r(14),c=r(4),u=r(11),p=r(12),d={};e.add=function(t,e){var r=p();return i(t,r),d[r]=new o(t,e),d[r]},e.remove=function(t){delete d[n(t)],l(t)},e.get=function(t){return d[n(t)]}},function(t,e,r){"use strict";function o(t,e){return t.settings.minScrollbarLength&&(e=Math.max(e,t.settings.minScrollbarLength)),t.settings.maxScrollbarLength&&(e=Math.min(e,t.settings.maxScrollbarLength)),e}function n(t,e){var r={width:e.railXWidth};e.isRtl?r.left=e.negativeScrollAdjustment+t.scrollLeft+e.containerWidth-e.contentWidth:r.left=t.scrollLeft,e.isScrollbarXUsingBottom?r.bottom=e.scrollbarXBottom-t.scrollTop:r.top=e.scrollbarXTop+t.scrollTop,l.css(e.scrollbarXRail,r);var o={top:t.scrollTop,height:e.railYHeight};e.isScrollbarYUsingRight?e.isRtl?o.right=e.contentWidth-(e.negativeScrollAdjustment+t.scrollLeft)-e.scrollbarYRight-e.scrollbarYOuterWidth:o.right=e.scrollbarYRight-t.scrollLeft:e.isRtl?o.left=e.negativeScrollAdjustment+t.scrollLeft+2*e.containerWidth-e.contentWidth-e.scrollbarYLeft-e.scrollbarYOuterWidth:o.left=e.scrollbarYLeft+t.scrollLeft,l.css(e.scrollbarYRail,o),l.css(e.scrollbarX,{left:e.scrollbarXLeft,width:e.scrollbarXWidth-e.railBorderXWidth}),l.css(e.scrollbarY,{top:e.scrollbarYTop,height:e.scrollbarYHeight-e.railBorderYWidth})}var i=r(2),l=r(4),s=r(0),a=r(3);t.exports=function(t){var e=s.get(t);e.containerWidth=t.clientWidth,e.containerHeight=t.clientHeight,e.contentWidth=t.scrollWidth,e.contentHeight=t.scrollHeight;var r;t.contains(e.scrollbarXRail)||(r=l.queryChildren(t,".ps__scrollbar-x-rail"),r.length>0&&r.forEach(function(t){l.remove(t)}),l.appendTo(e.scrollbarXRail,t)),t.contains(e.scrollbarYRail)||(r=l.queryChildren(t,".ps__scrollbar-y-rail"),r.length>0&&r.forEach(function(t){l.remove(t)}),l.appendTo(e.scrollbarYRail,t)),!e.settings.suppressScrollX&&e.containerWidth+e.settings.scrollXMarginOffset<e.contentWidth?(e.scrollbarXActive=!0,e.railXWidth=e.containerWidth-e.railXMarginWidth,e.railXRatio=e.containerWidth/e.railXWidth,e.scrollbarXWidth=o(e,i.toInt(e.railXWidth*e.containerWidth/e.contentWidth)),e.scrollbarXLeft=i.toInt((e.negativeScrollAdjustment+t.scrollLeft)*(e.railXWidth-e.scrollbarXWidth)/(e.contentWidth-e.containerWidth))):e.scrollbarXActive=!1,!e.settings.suppressScrollY&&e.containerHeight+e.settings.scrollYMarginOffset<e.contentHeight?(e.scrollbarYActive=!0,e.railYHeight=e.containerHeight-e.railYMarginHeight,e.railYRatio=e.containerHeight/e.railYHeight,e.scrollbarYHeight=o(e,i.toInt(e.railYHeight*e.containerHeight/e.contentHeight)),e.scrollbarYTop=i.toInt(t.scrollTop*(e.railYHeight-e.scrollbarYHeight)/(e.contentHeight-e.containerHeight))):e.scrollbarYActive=!1,e.scrollbarXLeft>=e.railXWidth-e.scrollbarXWidth&&(e.scrollbarXLeft=e.railXWidth-e.scrollbarXWidth),e.scrollbarYTop>=e.railYHeight-e.scrollbarYHeight&&(e.scrollbarYTop=e.railYHeight-e.scrollbarYHeight),n(t,e),e.scrollbarXActive?t.classList.add("ps--active-x"):(t.classList.remove("ps--active-x"),e.scrollbarXWidth=0,e.scrollbarXLeft=0,a(t,"left",0)),e.scrollbarYActive?t.classList.add("ps--active-y"):(t.classList.remove("ps--active-y"),e.scrollbarYHeight=0,e.scrollbarYTop=0,a(t,"top",0))}},function(t,e,r){"use strict";function o(t){var e,r=["ps--in-scrolling"];return e=void 0===t?["ps--x","ps--y"]:["ps--"+t],r.concat(e)}var n=r(4),i=e.toInt=function(t){return parseInt(t,10)||0};e.isEditable=function(t){return n.matches(t,"input,[contenteditable]")||n.matches(t,"select,[contenteditable]")||n.matches(t,"textarea,[contenteditable]")||n.matches(t,"button,[contenteditable]")},e.removePsClasses=function(t){for(var e=0;e<t.classList.length;e++){var r=t.classList[e];0===r.indexOf("ps-")&&t.classList.remove(r)}},e.outerWidth=function(t){return i(n.css(t,"width"))+i(n.css(t,"paddingLeft"))+i(n.css(t,"paddingRight"))+i(n.css(t,"borderLeftWidth"))+i(n.css(t,"borderRightWidth"))},e.startScrolling=function(t,e){for(var r=o(e),n=0;n<r.length;n++)t.classList.add(r[n])},e.stopScrolling=function(t,e){for(var r=o(e),n=0;n<r.length;n++)t.classList.remove(r[n])},e.env={isWebKit:"undefined"!=typeof document&&"WebkitAppearance"in document.documentElement.style,supportsTouch:"undefined"!=typeof window&&("ontouchstart"in window||window.DocumentTouch&&document instanceof window.DocumentTouch),supportsIePointer:"undefined"!=typeof window&&null!==window.navigator.msMaxTouchPoints}},function(t,e,r){"use strict";var o=r(0),n=function(t){var e=document.createEvent("Event");return e.initEvent(t,!0,!0),e};t.exports=function(t,e,r){if(void 0===t)throw"You must provide an element to the update-scroll function";if(void 0===e)throw"You must provide an axis to the update-scroll function";if(void 0===r)throw"You must provide a value to the update-scroll function";"top"===e&&r<=0&&(t.scrollTop=r=0,t.dispatchEvent(n("ps-y-reach-start"))),"left"===e&&r<=0&&(t.scrollLeft=r=0,t.dispatchEvent(n("ps-x-reach-start")));var i=o.get(t);"top"===e&&r>=i.contentHeight-i.containerHeight&&(r=i.contentHeight-i.containerHeight,r-t.scrollTop<=2?r=t.scrollTop:t.scrollTop=r,t.dispatchEvent(n("ps-y-reach-end"))),"left"===e&&r>=i.contentWidth-i.containerWidth&&(r=i.contentWidth-i.containerWidth,r-t.scrollLeft<=2?r=t.scrollLeft:t.scrollLeft=r,t.dispatchEvent(n("ps-x-reach-end"))),void 0===i.lastTop&&(i.lastTop=t.scrollTop),void 0===i.lastLeft&&(i.lastLeft=t.scrollLeft),"top"===e&&r<i.lastTop&&t.dispatchEvent(n("ps-scroll-up")),"top"===e&&r>i.lastTop&&t.dispatchEvent(n("ps-scroll-down")),"left"===e&&r<i.lastLeft&&t.dispatchEvent(n("ps-scroll-left")),"left"===e&&r>i.lastLeft&&t.dispatchEvent(n("ps-scroll-right")),"top"===e&&r!==i.lastTop&&(t.scrollTop=i.lastTop=r,t.dispatchEvent(n("ps-scroll-y"))),"left"===e&&r!==i.lastLeft&&(t.scrollLeft=i.lastLeft=r,t.dispatchEvent(n("ps-scroll-x")))}},function(t,e,r){"use strict";function o(t,e){return window.getComputedStyle(t)[e]}function n(t,e,r){return"number"==typeof r&&(r=r.toString()+"px"),t.style[e]=r,t}function i(t,e){for(var r in e){var o=e[r];"number"==typeof o&&(o=o.toString()+"px"),t.style[r]=o}return t}var l={};l.create=function(t,e){var r=document.createElement(t);return r.className=e,r},l.appendTo=function(t,e){return e.appendChild(t),t},l.css=function(t,e,r){return"object"==typeof e?i(t,e):void 0===r?o(t,e):n(t,e,r)},l.matches=function(t,e){return void 0!==t.matches?t.matches(e):t.msMatchesSelector(e)},l.remove=function(t){void 0!==t.remove?t.remove():t.parentNode&&t.parentNode.removeChild(t)},l.queryChildren=function(t,e){return Array.prototype.filter.call(t.childNodes,function(t){return l.matches(t,e)})},t.exports=l},function(t,e,r){r(28);var o=r(25)(r(7),r(26),null,null);t.exports=o.exports},function(t,e,r){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=r(5),n=r.n(o);e.default=n.a},function(t,e,r){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var o=r(10),n=r.n(o);e.default={name:"vue-perfect-scrollbar",props:{settings:{default:void 0},swicher:{type:Boolean,default:!0},tagname:{type:String,default:"section"}},methods:{scrollHanle:function(t){this.$emit(t.type,t)},update:function(){n.a.update(this.$el)},__init:function(){this.swicher&&(this._ps_inited?this.update(this.$el):(this._ps_inited=!0,n.a.initialize(this.$el,this.settings)))},__uninit:function(){n.a.destroy(this.$el),this._ps_inited=!1}},watch:{swicher:function(t){t&&!this._ps_inited&&this.__init(),!t&&this._ps_inited&&this.__uninit()},$route:function(){this.update()}},mounted:function(){this.__init()},updated:function(){this.$nextTick(this.update)},activated:function(){this.__init()},deactivated:function(){this.__uninit()},beforeDestroy:function(){this.__uninit()}}},function(t,e,r){e=t.exports=r(9)(),e.push([t.i,".ps{-ms-touch-action:auto;touch-action:auto;overflow:hidden!important;-ms-overflow-style:none}@supports (-ms-overflow-style:none){.ps{overflow:auto!important}}@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active){.ps{overflow:auto!important}}.ps.ps--active-x>.ps__scrollbar-x-rail,.ps.ps--active-y>.ps__scrollbar-y-rail{display:block;background-color:transparent}.ps.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail{background-color:#eee;opacity:.9}.ps.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail>.ps__scrollbar-x{background-color:#999;height:11px}.ps.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail{background-color:#eee;opacity:.9}.ps.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail>.ps__scrollbar-y{background-color:#999;width:11px}.ps>.ps__scrollbar-x-rail{display:none;position:absolute;opacity:0;transition:background-color .2s linear,opacity .2s linear;bottom:0;height:15px}.ps>.ps__scrollbar-x-rail>.ps__scrollbar-x{position:absolute;background-color:#aaa;border-radius:6px;transition:background-color .2s linear,height .2s linear,width .2s ease-in-out,border-radius .2s ease-in-out;bottom:2px;height:6px}.ps>.ps__scrollbar-x-rail:active>.ps__scrollbar-x,.ps>.ps__scrollbar-x-rail:hover>.ps__scrollbar-x{height:11px}.ps>.ps__scrollbar-y-rail{display:none;position:absolute;opacity:0;transition:background-color .2s linear,opacity .2s linear;right:0;width:15px}.ps>.ps__scrollbar-y-rail>.ps__scrollbar-y{position:absolute;background-color:#aaa;border-radius:6px;transition:background-color .2s linear,height .2s linear,width .2s ease-in-out,border-radius .2s ease-in-out;right:2px;width:6px}.ps>.ps__scrollbar-y-rail:active>.ps__scrollbar-y,.ps>.ps__scrollbar-y-rail:hover>.ps__scrollbar-y{width:11px}.ps:hover.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail{background-color:#eee;opacity:.9}.ps:hover.ps--in-scrolling.ps--x>.ps__scrollbar-x-rail>.ps__scrollbar-x{background-color:#999;height:11px}.ps:hover.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail{background-color:#eee;opacity:.9}.ps:hover.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail>.ps__scrollbar-y{background-color:#999;width:11px}.ps:hover>.ps__scrollbar-x-rail,.ps:hover>.ps__scrollbar-y-rail{opacity:.6}.ps:hover>.ps__scrollbar-x-rail:hover{background-color:#eee;opacity:.9}.ps:hover>.ps__scrollbar-x-rail:hover>.ps__scrollbar-x{background-color:#999}.ps:hover>.ps__scrollbar-y-rail:hover{background-color:#eee;opacity:.9}.ps:hover>.ps__scrollbar-y-rail:hover>.ps__scrollbar-y{background-color:#999}.ps-container{position:relative}",""])},function(t,e){t.exports=function(){var t=[];return t.toString=function(){for(var t=[],e=0;e<this.length;e++){var r=this[e];r[2]?t.push("@media "+r[2]+"{"+r[1]+"}"):t.push(r[1])}return t.join("")},t.i=function(e,r){"string"==typeof e&&(e=[[null,e,""]]);for(var o={},n=0;n<this.length;n++){var i=this[n][0];"number"==typeof i&&(o[i]=!0)}for(n=0;n<e.length;n++){var l=e[n];"number"==typeof l[0]&&o[l[0]]||(r&&!l[2]?l[2]=r:r&&(l[2]="("+l[2]+") and ("+r+")"),t.push(l))}},t}},function(t,e,r){"use strict";t.exports=r(13)},function(t,e,r){"use strict";var o=function(t){this.element=t,this.events={}};o.prototype.bind=function(t,e){void 0===this.events[t]&&(this.events[t]=[]),this.events[t].push(e),this.element.addEventListener(t,e,!1)},o.prototype.unbind=function(t,e){var r=void 0!==e;this.events[t]=this.events[t].filter(function(o){return!(!r||o===e)||(this.element.removeEventListener(t,o,!1),!1)},this)},o.prototype.unbindAll=function(){for(var t in this.events)this.unbind(t)};var n=function(){this.eventElements=[]};n.prototype.eventElement=function(t){var e=this.eventElements.filter(function(e){return e.element===t})[0];return void 0===e&&(e=new o(t),this.eventElements.push(e)),e},n.prototype.bind=function(t,e,r){this.eventElement(t).bind(e,r)},n.prototype.unbind=function(t,e,r){this.eventElement(t).unbind(e,r)},n.prototype.unbindAll=function(){for(var t=0;t<this.eventElements.length;t++)this.eventElements[t].unbindAll()},n.prototype.once=function(t,e,r){var o=this.eventElement(t),n=function(t){o.unbind(e,n),r(t)};o.bind(e,n)},t.exports=n},function(t,e,r){"use strict";t.exports=function(){function t(){return Math.floor(65536*(1+Math.random())).toString(16).substring(1)}return function(){return t()+t()+"-"+t()+"-"+t()+"-"+t()+"-"+t()+t()+t()}}()},function(t,e,r){"use strict";var o=r(15),n=r(23),i=r(24);t.exports={initialize:n,update:i,destroy:o}},function(t,e,r){"use strict";t.exports=function(){return{handlers:["click-rail","drag-scrollbar","keyboard","wheel","touch"],maxScrollbarLength:null,minScrollbarLength:null,scrollXMarginOffset:0,scrollYMarginOffset:0,suppressScrollX:!1,suppressScrollY:!1,swipePropagation:!0,swipeEasing:!0,useBothWheelAxes:!1,wheelPropagation:!1,wheelSpeed:1,theme:"default"}}},function(t,e,r){"use strict";var o=r(2),n=r(4),i=r(0);t.exports=function(t){var e=i.get(t);e&&(e.event.unbindAll(),n.remove(e.scrollbarX),n.remove(e.scrollbarY),n.remove(e.scrollbarXRail),n.remove(e.scrollbarYRail),o.removePsClasses(t),i.remove(t))}},function(t,e,r){"use strict";function o(t,e){function r(t){return t.getBoundingClientRect()}var o=function(t){t.stopPropagation()};e.event.bind(e.scrollbarY,"click",o),e.event.bind(e.scrollbarYRail,"click",function(o){var n=o.pageY-window.pageYOffset-r(e.scrollbarYRail).top,s=n>e.scrollbarYTop?1:-1;l(t,"top",t.scrollTop+s*e.containerHeight),i(t),o.stopPropagation()}),e.event.bind(e.scrollbarX,"click",o),e.event.bind(e.scrollbarXRail,"click",function(o){var n=o.pageX-window.pageXOffset-r(e.scrollbarXRail).left,s=n>e.scrollbarXLeft?1:-1;l(t,"left",t.scrollLeft+s*e.containerWidth),i(t),o.stopPropagation()})}var n=r(0),i=r(1),l=r(3);t.exports=function(t){o(t,n.get(t))}},function(t,e,r){"use strict";function o(t,e){function r(r){var n=o+r*e.railXRatio,l=Math.max(0,e.scrollbarXRail.getBoundingClientRect().left)+e.railXRatio*(e.railXWidth-e.scrollbarXWidth);e.scrollbarXLeft=n<0?0:n>l?l:n;var s=i.toInt(e.scrollbarXLeft*(e.contentWidth-e.containerWidth)/(e.containerWidth-e.railXRatio*e.scrollbarXWidth))-e.negativeScrollAdjustment;c(t,"left",s)}var o=null,n=null,s=function(e){r(e.pageX-n),a(t),e.stopPropagation(),e.preventDefault()},u=function(){i.stopScrolling(t,"x"),e.event.unbind(e.ownerDocument,"mousemove",s)};e.event.bind(e.scrollbarX,"mousedown",function(r){n=r.pageX,o=i.toInt(l.css(e.scrollbarX,"left"))*e.railXRatio,i.startScrolling(t,"x"),e.event.bind(e.ownerDocument,"mousemove",s),e.event.once(e.ownerDocument,"mouseup",u),r.stopPropagation(),r.preventDefault()})}function n(t,e){function r(r){var n=o+r*e.railYRatio,l=Math.max(0,e.scrollbarYRail.getBoundingClientRect().top)+e.railYRatio*(e.railYHeight-e.scrollbarYHeight);e.scrollbarYTop=n<0?0:n>l?l:n;var s=i.toInt(e.scrollbarYTop*(e.contentHeight-e.containerHeight)/(e.containerHeight-e.railYRatio*e.scrollbarYHeight));c(t,"top",s)}var o=null,n=null,s=function(e){r(e.pageY-n),a(t),e.stopPropagation(),e.preventDefault()},u=function(){i.stopScrolling(t,"y"),e.event.unbind(e.ownerDocument,"mousemove",s)};e.event.bind(e.scrollbarY,"mousedown",function(r){n=r.pageY,o=i.toInt(l.css(e.scrollbarY,"top"))*e.railYRatio,i.startScrolling(t,"y"),e.event.bind(e.ownerDocument,"mousemove",s),e.event.once(e.ownerDocument,"mouseup",u),r.stopPropagation(),r.preventDefault()})}var i=r(2),l=r(4),s=r(0),a=r(1),c=r(3);t.exports=function(t){var e=s.get(t);o(t,e),n(t,e)}},function(t,e,r){"use strict";function o(t,e){function r(r,o){var n=t.scrollTop;if(0===r){if(!e.scrollbarYActive)return!1;if(0===n&&o>0||n>=e.contentHeight-e.containerHeight&&o<0)return!e.settings.wheelPropagation}var i=t.scrollLeft;if(0===o){if(!e.scrollbarXActive)return!1;if(0===i&&r<0||i>=e.contentWidth-e.containerWidth&&r>0)return!e.settings.wheelPropagation}return!0}var o=!1;e.event.bind(t,"mouseenter",function(){o=!0}),e.event.bind(t,"mouseleave",function(){o=!1});var l=!1;e.event.bind(e.ownerDocument,"keydown",function(c){if(!(c.isDefaultPrevented&&c.isDefaultPrevented()||c.defaultPrevented)){var u=i.matches(e.scrollbarX,":focus")||i.matches(e.scrollbarY,":focus");if(o||u){var p=document.activeElement?document.activeElement:e.ownerDocument.activeElement;if(p){if("IFRAME"===p.tagName)p=p.contentDocument.activeElement;else for(;p.shadowRoot;)p=p.shadowRoot.activeElement;if(n.isEditable(p))return}var d=0,f=0;switch(c.which){case 37:d=c.metaKey?-e.contentWidth:c.altKey?-e.containerWidth:-30;break;case 38:f=c.metaKey?e.contentHeight:c.altKey?e.containerHeight:30;break;case 39:d=c.metaKey?e.contentWidth:c.altKey?e.containerWidth:30;break;case 40:f=c.metaKey?-e.contentHeight:c.altKey?-e.containerHeight:-30;break;case 33:f=90;break;case 32:f=c.shiftKey?90:-90;break;case 34:f=-90;break;case 35:f=c.ctrlKey?-e.contentHeight:-e.containerHeight;break;case 36:f=c.ctrlKey?t.scrollTop:e.containerHeight;break;default:return}a(t,"top",t.scrollTop-f),a(t,"left",t.scrollLeft+d),s(t),l=r(d,f),l&&c.preventDefault()}}})}var n=r(2),i=r(4),l=r(0),s=r(1),a=r(3);t.exports=function(t){o(t,l.get(t))}},function(t,e,r){"use strict";function o(t,e){function r(r,o){var n=t.scrollTop;if(0===r){if(!e.scrollbarYActive)return!1;if(0===n&&o>0||n>=e.contentHeight-e.containerHeight&&o<0)return!e.settings.wheelPropagation}var i=t.scrollLeft;if(0===o){if(!e.scrollbarXActive)return!1;if(0===i&&r<0||i>=e.contentWidth-e.containerWidth&&r>0)return!e.settings.wheelPropagation}return!0}function o(t){var e=t.deltaX,r=-1*t.deltaY;return void 0!==e&&void 0!==r||(e=-1*t.wheelDeltaX/6,r=t.wheelDeltaY/6),t.deltaMode&&1===t.deltaMode&&(e*=10,r*=10),e!==e&&r!==r&&(e=0,r=t.wheelDelta),t.shiftKey?[-r,-e]:[e,r]}function n(e,r){var o=t.querySelector("textarea:hover, select[multiple]:hover, .ps-child:hover");if(o){var n=window.getComputedStyle(o);if(![n.overflow,n.overflowX,n.overflowY].join("").match(/(scroll|auto)/))return!1;var i=o.scrollHeight-o.clientHeight;if(i>0&&!(0===o.scrollTop&&r>0||o.scrollTop===i&&r<0))return!0;var l=o.scrollLeft-o.clientWidth;if(l>0&&!(0===o.scrollLeft&&e<0||o.scrollLeft===l&&e>0))return!0}return!1}function s(s){var c=o(s),u=c[0],p=c[1];n(u,p)||(a=!1,e.settings.useBothWheelAxes?e.scrollbarYActive&&!e.scrollbarXActive?(p?l(t,"top",t.scrollTop-p*e.settings.wheelSpeed):l(t,"top",t.scrollTop+u*e.settings.wheelSpeed),a=!0):e.scrollbarXActive&&!e.scrollbarYActive&&(u?l(t,"left",t.scrollLeft+u*e.settings.wheelSpeed):l(t,"left",t.scrollLeft-p*e.settings.wheelSpeed),a=!0):(l(t,"top",t.scrollTop-p*e.settings.wheelSpeed),l(t,"left",t.scrollLeft+u*e.settings.wheelSpeed)),i(t),(a=a||r(u,p))&&(s.stopPropagation(),s.preventDefault()))}var a=!1;void 0!==window.onwheel?e.event.bind(t,"wheel",s):void 0!==window.onmousewheel&&e.event.bind(t,"mousewheel",s)}var n=r(0),i=r(1),l=r(3);t.exports=function(t){o(t,n.get(t))}},function(t,e,r){"use strict";function o(t,e){e.event.bind(t,"scroll",function(){i(t)})}var n=r(0),i=r(1);t.exports=function(t){o(t,n.get(t))}},function(t,e,r){"use strict";function o(t,e){function r(){var t=window.getSelection?window.getSelection():document.getSelection?document.getSelection():"";return 0===t.toString().length?null:t.getRangeAt(0).commonAncestorContainer}function o(){c||(c=setInterval(function(){if(!i.get(t))return void clearInterval(c);s(t,"top",t.scrollTop+u.top),s(t,"left",t.scrollLeft+u.left),l(t)},50))}function a(){c&&(clearInterval(c),c=null),n.stopScrolling(t)}var c=null,u={top:0,left:0},p=!1;e.event.bind(e.ownerDocument,"selectionchange",function(){t.contains(r())?p=!0:(p=!1,a())}),e.event.bind(window,"mouseup",function(){p&&(p=!1,a())}),e.event.bind(window,"keyup",function(){p&&(p=!1,a())}),e.event.bind(window,"mousemove",function(e){if(p){var r={x:e.pageX,y:e.pageY},i={left:t.offsetLeft,right:t.offsetLeft+t.offsetWidth,top:t.offsetTop,bottom:t.offsetTop+t.offsetHeight};r.x<i.left+3?(u.left=-5,n.startScrolling(t,"x")):r.x>i.right-3?(u.left=5,n.startScrolling(t,"x")):u.left=0,r.y<i.top+3?(u.top=i.top+3-r.y<5?-5:-20,n.startScrolling(t,"y")):r.y>i.bottom-3?(u.top=r.y-i.bottom+3<5?5:20,n.startScrolling(t,"y")):u.top=0,0===u.top&&0===u.left?a():o()}})}var n=r(2),i=r(0),l=r(1),s=r(3);t.exports=function(t){o(t,i.get(t))}},function(t,e,r){"use strict";function o(t,e,r,o){function n(r,o){var n=t.scrollTop,i=t.scrollLeft,l=Math.abs(r),s=Math.abs(o);if(s>l){if(o<0&&n===e.contentHeight-e.containerHeight||o>0&&0===n)return!e.settings.swipePropagation}else if(l>s&&(r<0&&i===e.contentWidth-e.containerWidth||r>0&&0===i))return!e.settings.swipePropagation;return!0}function a(e,r){s(t,"top",t.scrollTop-r),s(t,"left",t.scrollLeft-e),l(t)}function c(){w=!0}function u(){w=!1}function p(t){return t.targetTouches?t.targetTouches[0]:t}function d(t){return(!t.pointerType||"pen"!==t.pointerType||0!==t.buttons)&&(!(!t.targetTouches||1!==t.targetTouches.length)||!(!t.pointerType||"mouse"===t.pointerType||t.pointerType===t.MSPOINTER_TYPE_MOUSE))}function f(t){if(d(t)){_=!0;var e=p(t);b.pageX=e.pageX,b.pageY=e.pageY,g=(new Date).getTime(),null!==y&&clearInterval(y),t.stopPropagation()}}function h(t){if(!_&&e.settings.swipePropagation&&f(t),!w&&_&&d(t)){var r=p(t),o={pageX:r.pageX,pageY:r.pageY},i=o.pageX-b.pageX,l=o.pageY-b.pageY;a(i,l),b=o;var s=(new Date).getTime(),c=s-g;c>0&&(m.x=i/c,m.y=l/c,g=s),n(i,l)&&(t.stopPropagation(),t.preventDefault())}}function v(){!w&&_&&(_=!1,e.settings.swipeEasing&&(clearInterval(y),y=setInterval(function(){return i.get(t)&&(m.x||m.y)?Math.abs(m.x)<.01&&Math.abs(m.y)<.01?void clearInterval(y):(a(30*m.x,30*m.y),m.x*=.8,void(m.y*=.8)):void clearInterval(y)},10)))}var b={},g=0,m={},y=null,w=!1,_=!1;r?(e.event.bind(window,"touchstart",c),e.event.bind(window,"touchend",u),e.event.bind(t,"touchstart",f),e.event.bind(t,"touchmove",h),e.event.bind(t,"touchend",v)):o&&(window.PointerEvent?(e.event.bind(window,"pointerdown",c),e.event.bind(window,"pointerup",u),e.event.bind(t,"pointerdown",f),e.event.bind(t,"pointermove",h),e.event.bind(t,"pointerup",v)):window.MSPointerEvent&&(e.event.bind(window,"MSPointerDown",c),e.event.bind(window,"MSPointerUp",u),e.event.bind(t,"MSPointerDown",f),e.event.bind(t,"MSPointerMove",h),e.event.bind(t,"MSPointerUp",v)))}var n=r(2),i=r(0),l=r(1),s=r(3);t.exports=function(t){if(n.env.supportsTouch||n.env.supportsIePointer){o(t,i.get(t),n.env.supportsTouch,n.env.supportsIePointer)}}},function(t,e,r){"use strict";var o=r(0),n=r(1),i={"click-rail":r(16),"drag-scrollbar":r(17),keyboard:r(18),wheel:r(19),touch:r(22),selection:r(21)},l=r(20);t.exports=function(t,e){t.classList.add("ps");var r=o.add(t,"object"==typeof e?e:{});t.classList.add("ps--theme_"+r.settings.theme),r.settings.handlers.forEach(function(e){i[e](t)}),l(t),n(t)}},function(t,e,r){"use strict";var o=r(2),n=r(4),i=r(0),l=r(1),s=r(3);t.exports=function(t){var e=i.get(t);e&&(e.negativeScrollAdjustment=e.isNegativeScroll?t.scrollWidth-t.clientWidth:0,n.css(e.scrollbarXRail,"display","block"),n.css(e.scrollbarYRail,"display","block"),e.railXMarginWidth=o.toInt(n.css(e.scrollbarXRail,"marginLeft"))+o.toInt(n.css(e.scrollbarXRail,"marginRight")),e.railYMarginHeight=o.toInt(n.css(e.scrollbarYRail,"marginTop"))+o.toInt(n.css(e.scrollbarYRail,"marginBottom")),n.css(e.scrollbarXRail,"display","none"),n.css(e.scrollbarYRail,"display","none"),l(t),s(t,"top",t.scrollTop),s(t,"left",t.scrollLeft),n.css(e.scrollbarXRail,"display",""),n.css(e.scrollbarYRail,"display",""))}},function(t,e){t.exports=function(t,e,r,o){var n,i=t=t||{},l=typeof t.default;"object"!==l&&"function"!==l||(n=t,i=t.default);var s="function"==typeof i?i.options:i;if(e&&(s.render=e.render,s.staticRenderFns=e.staticRenderFns),r&&(s._scopeId=r),o){var a=s.computed||(s.computed={});Object.keys(o).forEach(function(t){var e=o[t];a[t]=function(){return e}})}return{esModule:n,exports:i,options:s}}},function(t,e){t.exports={render:function(){var t=this,e=t.$createElement;return(t._self._c||e)(t.$props.tagname,{tag:"section",staticClass:"ps-container",on:{"~mouseover":function(e){t.update(e)},"ps-scroll-y":t.scrollHanle,"ps-scroll-x":t.scrollHanle,"ps-scroll-up":t.scrollHanle,"ps-scroll-down":t.scrollHanle,"ps-scroll-left":t.scrollHanle,"ps-scroll-right":t.scrollHanle,"ps-y-reach-start":t.scrollHanle,"ps-y-reach-end":t.scrollHanle,"ps-x-reach-start":t.scrollHanle,"ps-x-reach-end":t.scrollHanle}},[t._t("default")],2)},staticRenderFns:[]}},function(t,e){function r(t,e){for(var r=0;r<t.length;r++){var o=t[r],n=u[o.id];if(n){n.refs++;for(var i=0;i<n.parts.length;i++)n.parts[i](o.parts[i]);for(;i<o.parts.length;i++)n.parts.push(s(o.parts[i],e))}else{for(var l=[],i=0;i<o.parts.length;i++)l.push(s(o.parts[i],e));u[o.id]={id:o.id,refs:1,parts:l}}}}function o(t){for(var e=[],r={},o=0;o<t.length;o++){var n=t[o],i=n[0],l=n[1],s=n[2],a=n[3],c={css:l,media:s,sourceMap:a};r[i]?r[i].parts.push(c):e.push(r[i]={id:i,parts:[c]})}return e}function n(t,e){var r=f(),o=b[b.length-1];if("top"===t.insertAt)o?o.nextSibling?r.insertBefore(e,o.nextSibling):r.appendChild(e):r.insertBefore(e,r.firstChild),b.push(e);else{if("bottom"!==t.insertAt)throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");r.appendChild(e)}}function i(t){t.parentNode.removeChild(t);var e=b.indexOf(t);e>=0&&b.splice(e,1)}function l(t){var e=document.createElement("style");return e.type="text/css",n(t,e),e}function s(t,e){var r,o,n;if(e.singleton){var s=v++;r=h||(h=l(e)),o=a.bind(null,r,s,!1),n=a.bind(null,r,s,!0)}else r=l(e),o=c.bind(null,r),n=function(){i(r)};return o(t),function(e){if(e){if(e.css===t.css&&e.media===t.media&&e.sourceMap===t.sourceMap)return;o(t=e)}else n()}}function a(t,e,r,o){var n=r?"":o.css;if(t.styleSheet)t.styleSheet.cssText=g(e,n);else{var i=document.createTextNode(n),l=t.childNodes;l[e]&&t.removeChild(l[e]),l.length?t.insertBefore(i,l[e]):t.appendChild(i)}}function c(t,e){var r=e.css,o=e.media,n=e.sourceMap;if(o&&t.setAttribute("media",o),n&&(r+="\n/*# sourceURL="+n.sources[0]+" */",r+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(n))))+" */"),t.styleSheet)t.styleSheet.cssText=r;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(r))}}var u={},p=function(t){var e;return function(){return void 0===e&&(e=t.apply(this,arguments)),e}},d=p(function(){return/msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase())}),f=p(function(){return document.head||document.getElementsByTagName("head")[0]}),h=null,v=0,b=[];t.exports=function(t,e){if("undefined"!=typeof DEBUG&&DEBUG&&"object"!=typeof document)throw new Error("The style-loader cannot be used in a non-browser environment");e=e||{},void 0===e.singleton&&(e.singleton=d()),void 0===e.insertAt&&(e.insertAt="bottom");var n=o(t);return r(n,e),function(t){for(var i=[],l=0;l<n.length;l++){var s=n[l],a=u[s.id];a.refs--,i.push(a)}if(t){r(o(t),e)}for(var l=0;l<i.length;l++){var a=i[l];if(0===a.refs){for(var c=0;c<a.parts.length;c++)a.parts[c]();delete u[a.id]}}}};var g=function(){var t=[];return function(e,r){return t[e]=r,t.filter(Boolean).join("\n")}}()},function(t,e,r){var o=r(8);"string"==typeof o&&(o=[[t.i,o,""]]);r(27)(o,{});o.locals&&(t.exports=o.locals)}]);
-//# sourceMappingURL=index.js.map
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/*=========================================================================================
+    File Name: apexChartData.vue
+    Description: Data shown by charts
+    ----------------------------------------------------------------------------------------
+    Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+      Author: Pixinvent
+    Author URL: http://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+function generateData(baseval, count, yrange) {
+  var i = 0;
+  var series = [];
+
+  while (i < count) {
+    //var x =Math.floor(Math.random() * (750 - 1 + 1)) + 1;;
+    var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+    var z = Math.floor(Math.random() * (75 - 15 + 1)) + 15;
+    series.push([baseval, y, z]);
+    baseval += 86400000;
+    i++;
+  }
+
+  return series;
+}
+
+function generateDataHeatMap(count, yrange) {
+  var i = 0;
+  var series = [];
+
+  while (i < count) {
+    var x = 'w' + (i + 1).toString();
+    var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+    series.push({
+      x: x,
+      y: y
+    });
+    i++;
+  }
+
+  return series;
+}
+
+var themeColors = ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E'];
+/* harmony default export */ __webpack_exports__["default"] = ({
+  lineChartSimple: {
+    series: [{
+      name: "Desktops",
+      data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+    }],
+    chartOptions: {
+      chart: {
+        height: 350,
+        zoom: {
+          enabled: false
+        }
+      },
+      colors: themeColors,
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        curve: 'straight'
+      },
+      title: {
+        text: 'Product Trends by Month',
+        align: 'left'
+      },
+      grid: {
+        row: {
+          colors: ['#f3f3f3', 'transparent'],
+          // takes an array which will be repeated on columns
+          opacity: 0.5
+        }
+      },
+      xaxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep']
+      }
+    }
+  },
+  lineChartSimpleCode: "<template>\n  <vue-apex-charts type=\"line\" height=\"350\" :options=\"lineChartSimple.chartOptions\" :series=\"lineChartSimple.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      lineChartSimple: {\n        series: [{\n          name: \"Desktops\",\n          data: [10, 41, 35, 51, 49, 62, 69, 91, 148]\n        }],\n        chartOptions: {\n          chart: {\n            height: 350,\n            zoom: {\n              enabled: false\n            }\n          },\n          colors: themeColors,\n          dataLabels: {\n            enabled: false\n          },\n          stroke: {\n            curve: 'straight'\n          },\n          title: {\n            text: 'Product Trends by Month',\n            align: 'left'\n          },\n          grid: {\n            row: {\n              colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns\n              opacity: 0.5\n            },\n          },\n          xaxis: {\n            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],\n          }\n        }\n      }\n    }\n  }\n</script>",
+  lineAreaChartSpline: {
+    series: [{
+      name: 'series1',
+      data: [31, 40, 28, 51, 42, 109, 100]
+    }, {
+      name: 'series2',
+      data: [11, 32, 45, 32, 34, 52, 41]
+    }],
+    chartOptions: {
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        curve: 'smooth'
+      },
+      colors: themeColors,
+      xaxis: {
+        type: 'datetime',
+        categories: ["2018-09-19T00:00:00", "2018-09-19T01:30:00", "2018-09-19T02:30:00", "2018-09-19T03:30:00", "2018-09-19T04:30:00", "2018-09-19T05:30:00", "2018-09-19T06:30:00"]
+      },
+      tooltip: {
+        x: {
+          format: 'dd/MM/yy HH:mm'
+        }
+      }
+    }
+  },
+  lineAreaChartSplineCode: "<template>\n  <vue-apex-charts type=\"area\" height=\"350\" :options=\"lineAreaChartSpline.chartOptions\" :series=\"lineAreaChartSpline.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      lineAreaChartSpline: {\n        series: [{\n            name: 'series1',\n            data: [31, 40, 28, 51, 42, 109, 100]\n          }, {\n            name: 'series2',\n            data: [11, 32, 45, 32, 34, 52, 41]\n        }],\n        chartOptions: {\n          dataLabels: {\n            enabled: false\n          },\n          stroke: {\n            curve: 'smooth'\n          },\n          colors: themeColors,\n          xaxis: {\n            type: 'datetime',\n            categories: [\"2018-09-19T00:00:00\", \"2018-09-19T01:30:00\", \"2018-09-19T02:30:00\",\n              \"2018-09-19T03:30:00\", \"2018-09-19T04:30:00\", \"2018-09-19T05:30:00\",\n              \"2018-09-19T06:30:00\"\n            ],\n          },\n          tooltip: {\n            x: {\n              format: 'dd/MM/yy HH:mm'\n            },\n\n          }\n        }\n      }\n    }\n  }\n</script>",
+  columnChart: {
+    series: [{
+      name: 'Net Profit',
+      data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+    }, {
+      name: 'Revenue',
+      data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+    }, {
+      name: 'Free Cash Flow',
+      data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
+    }],
+    chartOptions: {
+      colors: themeColors,
+      plotOptions: {
+        bar: {
+          horizontal: false,
+          endingShape: 'rounded',
+          columnWidth: '55%'
+        }
+      },
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        show: true,
+        width: 2,
+        colors: ['transparent']
+      },
+      xaxis: {
+        categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct']
+      },
+      yaxis: {
+        title: {
+          text: '$ (thousands)'
+        }
+      },
+      fill: {
+        opacity: 1
+      },
+      tooltip: {
+        y: {
+          formatter: function formatter(val) {
+            return "$ " + val + " thousands";
+          }
+        }
+      }
+    }
+  },
+  columnChartCode: "<template>\n  <vue-apex-charts type=\"bar\" height=\"350\" :options=\"columnChart.chartOptions\" :series=\"columnChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      columnChart: {\n        series: [{\n            name: 'Net Profit',\n            data: [44, 55, 57, 56, 61, 58, 63, 60, 66]\n          }, {\n            name: 'Revenue',\n            data: [76, 85, 101, 98, 87, 105, 91, 114, 94]\n          }, {\n            name: 'Free Cash Flow',\n            data: [35, 41, 36, 26, 45, 48, 52, 53, 41]\n        }],\n        chartOptions: {\n          colors: themeColors,\n          plotOptions: {\n            bar: {\n              horizontal: false,\n              endingShape: 'rounded',\n              columnWidth: '55%',\n            },\n          },\n          dataLabels: {\n            enabled: false\n          },\n          stroke: {\n            show: true,\n            width: 2,\n            colors: ['transparent']\n          },\n\n          xaxis: {\n            categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],\n          },\n          yaxis: {\n            title: {\n              text: '$ (thousands)'\n            }\n          },\n          fill: {\n            opacity: 1\n\n          },\n          tooltip: {\n            y: {\n              formatter: function(val) {\n                return \"$ \" + val + \" thousands\"\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n</script>",
+  barChart: {
+    series: [{
+      data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+    }],
+    chartOptions: {
+      colors: themeColors,
+      plotOptions: {
+        bar: {
+          horizontal: true
+        }
+      },
+      dataLabels: {
+        enabled: false
+      },
+      xaxis: {
+        categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan', 'United States', 'China', 'Germany']
+      }
+    }
+  },
+  barChartCode: "<template>\n  <vue-apex-charts type=\"bar\" height=\"350\" :options=\"barChart.chartOptions\" :series=\"barChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      barChart: {\n        series: [{\n            data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]\n        }],\n        chartOptions: {\n          colors: themeColors,\n          plotOptions: {\n            bar: {\n              horizontal: true,\n            }\n          },\n          dataLabels: {\n            enabled: false\n          },\n          xaxis: {\n            categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',\n              'United States', 'China', 'Germany'\n            ],\n          }\n        }\n      }\n    }\n  }\n</script>",
+  mixedChart: {
+    series: [{
+      name: 'TEAM A',
+      type: 'column',
+      data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30]
+    }, {
+      name: 'TEAM B',
+      type: 'area',
+      data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43]
+    }, {
+      name: 'TEAM C',
+      type: 'line',
+      data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39]
+    }],
+    chartOptions: {
+      colors: themeColors,
+      chart: {
+        stacked: false
+      },
+      stroke: {
+        width: [0, 2, 5],
+        curve: 'smooth'
+      },
+      plotOptions: {
+        bar: {
+          columnWidth: '50%'
+        }
+      },
+      fill: {
+        opacity: [0.85, 0.25, 1],
+        gradient: {
+          inverseColors: false,
+          shade: 'light',
+          type: "vertical",
+          opacityFrom: 0.85,
+          opacityTo: 0.55,
+          stops: [0, 100, 100, 100]
+        }
+      },
+      labels: ['01/01/2003', '02/01/2003', '03/01/2003', '04/01/2003', '05/01/2003', '06/01/2003', '07/01/2003', '08/01/2003', '09/01/2003', '10/01/2003', '11/01/2003'],
+      markers: {
+        size: 0
+      },
+      xaxis: {
+        type: 'datetime'
+      },
+      yaxis: {
+        title: {
+          text: 'Points'
+        },
+        min: 0
+      },
+      tooltip: {
+        shared: true,
+        intersect: false,
+        y: {
+          formatter: function formatter(y) {
+            if (typeof y !== "undefined") {
+              return y.toFixed(0) + " points";
+            }
+
+            return y;
+          }
+        }
+      }
+    }
+  },
+  mixedChartCode: "<template>\n  <vue-apex-charts type=\"line\" height=\"350\" :options=\"mixedChart.chartOptions\" :series=\"mixedChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      mixedChart: {\n        series: [{\n            name: 'TEAM A',\n            type: 'column',\n            data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30]\n          }, {\n            name: 'TEAM B',\n            type: 'area',\n            data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43]\n          }, {\n            name: 'TEAM C',\n            type: 'line',\n            data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39]\n        }],\n        chartOptions: {\n          colors: themeColors,\n          chart: {\n            stacked: false,\n          },\n          stroke: {\n            width: [0, 2, 5],\n            curve: 'smooth'\n          },\n          plotOptions: {\n            bar: {\n              columnWidth: '50%'\n            }\n          },\n\n          fill: {\n            opacity: [0.85, 0.25, 1],\n            gradient: {\n              inverseColors: false,\n              shade: 'light',\n              type: \"vertical\",\n              opacityFrom: 0.85,\n              opacityTo: 0.55,\n              stops: [0, 100, 100, 100]\n            }\n          },\n          labels: ['01/01/2003', '02/01/2003', '03/01/2003', '04/01/2003', '05/01/2003', '06/01/2003', '07/01/2003',\n            '08/01/2003', '09/01/2003', '10/01/2003', '11/01/2003'\n          ],\n          markers: {\n            size: 0\n          },\n          xaxis: {\n            type: 'datetime'\n          },\n          yaxis: {\n            title: {\n              text: 'Points',\n            },\n            min: 0\n          },\n          tooltip: {\n            shared: true,\n            intersect: false,\n            y: {\n              formatter: function(y) {\n                if (typeof y !== \"undefined\") {\n                  return y.toFixed(0) + \" points\";\n                }\n                return y;\n\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n</script>",
+  candlestickChart: {
+    series: [{
+      data: [{
+        x: new Date(1538778600000),
+        y: [6629.81, 6650.5, 6623.04, 6633.33]
+      }, {
+        x: new Date(1538780400000),
+        y: [6632.01, 6643.59, 6620, 6630.11]
+      }, {
+        x: new Date(1538782200000),
+        y: [6630.71, 6648.95, 6623.34, 6635.65]
+      }, {
+        x: new Date(1538784000000),
+        y: [6635.65, 6651, 6629.67, 6638.24]
+      }, {
+        x: new Date(1538785800000),
+        y: [6638.24, 6640, 6620, 6624.47]
+      }, {
+        x: new Date(1538787600000),
+        y: [6624.53, 6636.03, 6621.68, 6624.31]
+      }, {
+        x: new Date(1538789400000),
+        y: [6624.61, 6632.2, 6617, 6626.02]
+      }, {
+        x: new Date(1538791200000),
+        y: [6627, 6627.62, 6584.22, 6603.02]
+      }, {
+        x: new Date(1538793000000),
+        y: [6605, 6608.03, 6598.95, 6604.01]
+      }, {
+        x: new Date(1538794800000),
+        y: [6604.5, 6614.4, 6602.26, 6608.02]
+      }, {
+        x: new Date(1538796600000),
+        y: [6608.02, 6610.68, 6601.99, 6608.91]
+      }, {
+        x: new Date(1538798400000),
+        y: [6608.91, 6618.99, 6608.01, 6612]
+      }, {
+        x: new Date(1538800200000),
+        y: [6612, 6615.13, 6605.09, 6612]
+      }, {
+        x: new Date(1538802000000),
+        y: [6612, 6624.12, 6608.43, 6622.95]
+      }, {
+        x: new Date(1538803800000),
+        y: [6623.91, 6623.91, 6615, 6615.67]
+      }, {
+        x: new Date(1538805600000),
+        y: [6618.69, 6618.74, 6610, 6610.4]
+      }, {
+        x: new Date(1538807400000),
+        y: [6611, 6622.78, 6610.4, 6614.9]
+      }, {
+        x: new Date(1538809200000),
+        y: [6614.9, 6626.2, 6613.33, 6623.45]
+      }, {
+        x: new Date(1538811000000),
+        y: [6623.48, 6627, 6618.38, 6620.35]
+      }, {
+        x: new Date(1538812800000),
+        y: [6619.43, 6620.35, 6610.05, 6615.53]
+      }, {
+        x: new Date(1538814600000),
+        y: [6615.53, 6617.93, 6610, 6615.19]
+      }, {
+        x: new Date(1538816400000),
+        y: [6615.19, 6621.6, 6608.2, 6620]
+      }, {
+        x: new Date(1538818200000),
+        y: [6619.54, 6625.17, 6614.15, 6620]
+      }, {
+        x: new Date(1538820000000),
+        y: [6620.33, 6634.15, 6617.24, 6624.61]
+      }, {
+        x: new Date(1538821800000),
+        y: [6625.95, 6626, 6611.66, 6617.58]
+      }, {
+        x: new Date(1538823600000),
+        y: [6619, 6625.97, 6595.27, 6598.86]
+      }, {
+        x: new Date(1538825400000),
+        y: [6598.86, 6598.88, 6570, 6587.16]
+      }, {
+        x: new Date(1538827200000),
+        y: [6588.86, 6600, 6580, 6593.4]
+      }, {
+        x: new Date(1538829000000),
+        y: [6593.99, 6598.89, 6585, 6587.81]
+      }, {
+        x: new Date(1538830800000),
+        y: [6587.81, 6592.73, 6567.14, 6578]
+      }, {
+        x: new Date(1538832600000),
+        y: [6578.35, 6581.72, 6567.39, 6579]
+      }, {
+        x: new Date(1538834400000),
+        y: [6579.38, 6580.92, 6566.77, 6575.96]
+      }, {
+        x: new Date(1538836200000),
+        y: [6575.96, 6589, 6571.77, 6588.92]
+      }, {
+        x: new Date(1538838000000),
+        y: [6588.92, 6594, 6577.55, 6589.22]
+      }, {
+        x: new Date(1538839800000),
+        y: [6589.3, 6598.89, 6589.1, 6596.08]
+      }, {
+        x: new Date(1538841600000),
+        y: [6597.5, 6600, 6588.39, 6596.25]
+      }, {
+        x: new Date(1538843400000),
+        y: [6598.03, 6600, 6588.73, 6595.97]
+      }, {
+        x: new Date(1538845200000),
+        y: [6595.97, 6602.01, 6588.17, 6602]
+      }, {
+        x: new Date(1538847000000),
+        y: [6602, 6607, 6596.51, 6599.95]
+      }, {
+        x: new Date(1538848800000),
+        y: [6600.63, 6601.21, 6590.39, 6591.02]
+      }, {
+        x: new Date(1538850600000),
+        y: [6591.02, 6603.08, 6591, 6591]
+      }, {
+        x: new Date(1538852400000),
+        y: [6591, 6601.32, 6585, 6592]
+      }, {
+        x: new Date(1538854200000),
+        y: [6593.13, 6596.01, 6590, 6593.34]
+      }, {
+        x: new Date(1538856000000),
+        y: [6593.34, 6604.76, 6582.63, 6593.86]
+      }, {
+        x: new Date(1538857800000),
+        y: [6593.86, 6604.28, 6586.57, 6600.01]
+      }, {
+        x: new Date(1538859600000),
+        y: [6601.81, 6603.21, 6592.78, 6596.25]
+      }, {
+        x: new Date(1538861400000),
+        y: [6596.25, 6604.2, 6590, 6602.99]
+      }, {
+        x: new Date(1538863200000),
+        y: [6602.99, 6606, 6584.99, 6587.81]
+      }, {
+        x: new Date(1538865000000),
+        y: [6587.81, 6595, 6583.27, 6591.96]
+      }, {
+        x: new Date(1538866800000),
+        y: [6591.97, 6596.07, 6585, 6588.39]
+      }, {
+        x: new Date(1538868600000),
+        y: [6587.6, 6598.21, 6587.6, 6594.27]
+      }, {
+        x: new Date(1538870400000),
+        y: [6596.44, 6601, 6590, 6596.55]
+      }, {
+        x: new Date(1538872200000),
+        y: [6598.91, 6605, 6596.61, 6600.02]
+      }, {
+        x: new Date(1538874000000),
+        y: [6600.55, 6605, 6589.14, 6593.01]
+      }, {
+        x: new Date(1538875800000),
+        y: [6593.15, 6605, 6592, 6603.06]
+      }, {
+        x: new Date(1538877600000),
+        y: [6603.07, 6604.5, 6599.09, 6603.89]
+      }, {
+        x: new Date(1538879400000),
+        y: [6604.44, 6604.44, 6600, 6603.5]
+      }, {
+        x: new Date(1538881200000),
+        y: [6603.5, 6603.99, 6597.5, 6603.86]
+      }, {
+        x: new Date(1538883000000),
+        y: [6603.85, 6605, 6600, 6604.07]
+      }, {
+        x: new Date(1538884800000),
+        y: [6604.98, 6606, 6604.07, 6606]
+      }]
+    }],
+    chartOptions: {
+      colors: themeColors,
+      xaxis: {
+        type: 'datetime'
+      },
+      yaxis: {
+        tooltip: {
+          enabled: true
+        }
+      }
+    }
+  },
+  candlestickChartCode: "<template>\n  <vue-apex-charts type=\"candlestick\" height=\"350\" :options=\"candlestickChart.chartOptions\" :series=\"candlestickChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      candlestickChart: {\n        series: [{\n          data: [{ x: new Date(1538778600000), y: [6629.81, 6650.5, 6623.04, 6633.33] },\n            { x: new Date(1538780400000), y: [6632.01, 6643.59, 6620, 6630.11] },\n            { x: new Date(1538782200000), y: [6630.71, 6648.95, 6623.34, 6635.65] },\n            { x: new Date(1538784000000), y: [6635.65, 6651, 6629.67, 6638.24] },\n            { x: new Date(1538785800000), y: [6638.24, 6640, 6620, 6624.47] },\n            { x: new Date(1538787600000), y: [6624.53, 6636.03, 6621.68, 6624.31] },\n            { x: new Date(1538789400000), y: [6624.61, 6632.2, 6617, 6626.02] },\n            { x: new Date(1538791200000), y: [6627, 6627.62, 6584.22, 6603.02] },\n            { x: new Date(1538793000000), y: [6605, 6608.03, 6598.95, 6604.01] },\n            { x: new Date(1538794800000), y: [6604.5, 6614.4, 6602.26, 6608.02] },\n            { x: new Date(1538796600000), y: [6608.02, 6610.68, 6601.99, 6608.91] },\n            { x: new Date(1538798400000), y: [6608.91, 6618.99, 6608.01, 6612] },\n            { x: new Date(1538800200000), y: [6612, 6615.13, 6605.09, 6612] },\n            { x: new Date(1538802000000), y: [6612, 6624.12, 6608.43, 6622.95] },\n            { x: new Date(1538803800000), y: [6623.91, 6623.91, 6615, 6615.67] },\n            { x: new Date(1538805600000), y: [6618.69, 6618.74, 6610, 6610.4] },\n            { x: new Date(1538807400000), y: [6611, 6622.78, 6610.4, 6614.9] },\n            { x: new Date(1538809200000), y: [6614.9, 6626.2, 6613.33, 6623.45] },\n            { x: new Date(1538811000000), y: [6623.48, 6627, 6618.38, 6620.35] },\n            { x: new Date(1538812800000), y: [6619.43, 6620.35, 6610.05, 6615.53] },\n            { x: new Date(1538814600000), y: [6615.53, 6617.93, 6610, 6615.19] },\n            { x: new Date(1538816400000), y: [6615.19, 6621.6, 6608.2, 6620] },\n            { x: new Date(1538818200000), y: [6619.54, 6625.17, 6614.15, 6620] },\n            { x: new Date(1538820000000), y: [6620.33, 6634.15, 6617.24, 6624.61] },\n            { x: new Date(1538821800000), y: [6625.95, 6626, 6611.66, 6617.58] },\n            { x: new Date(1538823600000), y: [6619, 6625.97, 6595.27, 6598.86] },\n            { x: new Date(1538825400000), y: [6598.86, 6598.88, 6570, 6587.16] },\n            { x: new Date(1538827200000), y: [6588.86, 6600, 6580, 6593.4] },\n            { x: new Date(1538829000000), y: [6593.99, 6598.89, 6585, 6587.81] },\n            { x: new Date(1538830800000), y: [6587.81, 6592.73, 6567.14, 6578] },\n            { x: new Date(1538832600000), y: [6578.35, 6581.72, 6567.39, 6579] },\n            { x: new Date(1538834400000), y: [6579.38, 6580.92, 6566.77, 6575.96] },\n            { x: new Date(1538836200000), y: [6575.96, 6589, 6571.77, 6588.92] },\n            { x: new Date(1538838000000), y: [6588.92, 6594, 6577.55, 6589.22] },\n            { x: new Date(1538839800000), y: [6589.3, 6598.89, 6589.1, 6596.08] },\n            { x: new Date(1538841600000), y: [6597.5, 6600, 6588.39, 6596.25] },\n            { x: new Date(1538843400000), y: [6598.03, 6600, 6588.73, 6595.97] },\n            { x: new Date(1538845200000), y: [6595.97, 6602.01, 6588.17, 6602] },\n            { x: new Date(1538847000000), y: [6602, 6607, 6596.51, 6599.95] },\n            { x: new Date(1538848800000), y: [6600.63, 6601.21, 6590.39, 6591.02] },\n            { x: new Date(1538850600000), y: [6591.02, 6603.08, 6591, 6591] },\n            { x: new Date(1538852400000), y: [6591, 6601.32, 6585, 6592] },\n            { x: new Date(1538854200000), y: [6593.13, 6596.01, 6590, 6593.34] },\n            { x: new Date(1538856000000), y: [6593.34, 6604.76, 6582.63, 6593.86] },\n            { x: new Date(1538857800000), y: [6593.86, 6604.28, 6586.57, 6600.01] },\n            { x: new Date(1538859600000), y: [6601.81, 6603.21, 6592.78, 6596.25] },\n            { x: new Date(1538861400000), y: [6596.25, 6604.2, 6590, 6602.99] },\n            { x: new Date(1538863200000), y: [6602.99, 6606, 6584.99, 6587.81] },\n            { x: new Date(1538865000000), y: [6587.81, 6595, 6583.27, 6591.96] },\n            { x: new Date(1538866800000), y: [6591.97, 6596.07, 6585, 6588.39] },\n            { x: new Date(1538868600000), y: [6587.6, 6598.21, 6587.6, 6594.27] },\n            { x: new Date(1538870400000), y: [6596.44, 6601, 6590, 6596.55] },\n            { x: new Date(1538872200000), y: [6598.91, 6605, 6596.61, 6600.02] },\n            { x: new Date(1538874000000), y: [6600.55, 6605, 6589.14, 6593.01] },\n            { x: new Date(1538875800000), y: [6593.15, 6605, 6592, 6603.06] },\n            { x: new Date(1538877600000), y: [6603.07, 6604.5, 6599.09, 6603.89] },\n            { x: new Date(1538879400000), y: [6604.44, 6604.44, 6600, 6603.5] },\n            { x: new Date(1538881200000), y: [6603.5, 6603.99, 6597.5, 6603.86] },\n            { x: new Date(1538883000000), y: [6603.85, 6605, 6600, 6604.07] },\n            { x: new Date(1538884800000), y: [6604.98, 6606, 6604.07, 6606] },\n          ]\n        }],\n        chartOptions: {\n          colors: themeColors,\n          xaxis: {\n            type: 'datetime'\n          },\n          yaxis: {\n            tooltip: {\n              enabled: true\n            }\n          }\n        }\n      }\n    }\n  }\n</script>",
+  bubbleChart: {
+    series: [{
+      name: 'Product1',
+      data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
+        min: 10,
+        max: 60
+      })
+    }, {
+      name: 'Product2',
+      data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
+        min: 10,
+        max: 60
+      })
+    }, {
+      name: 'Product3',
+      data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
+        min: 10,
+        max: 60
+      })
+    }, {
+      name: 'Product4',
+      data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
+        min: 10,
+        max: 60
+      })
+    }],
+    chartOptions: {
+      colors: themeColors,
+      dataLabels: {
+        enabled: false
+      },
+      fill: {
+        type: 'gradient'
+      },
+      xaxis: {
+        tickAmount: 12,
+        type: 'datetime',
+        labels: {
+          rotate: 0
+        }
+      },
+      yaxis: {
+        max: 70
+      },
+      theme: {
+        palette: 'palette2'
+      }
+    }
+  },
+  bubbleChartCode: "<template>\n  <vue-apex-charts type=\"bubble\" height=\"350\" :options=\"bubbleChart.chartOptions\" :series=\"bubbleChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      bubbleChart: {\n        series: [{\n            name: 'Product1',\n            data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {\n              min: 10,\n              max: 60\n            })\n          },\n          {\n            name: 'Product2',\n            data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {\n              min: 10,\n              max: 60\n            })\n          },\n          {\n            name: 'Product3',\n            data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {\n              min: 10,\n              max: 60\n            })\n          },\n          {\n            name: 'Product4',\n            data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {\n              min: 10,\n              max: 60\n            })\n          }\n        ],\n        chartOptions: {\n          colors: themeColors,\n          dataLabels: {\n            enabled: false\n          },\n          fill: {\n            type: 'gradient',\n          },\n          xaxis: {\n            tickAmount: 12,\n            type: 'datetime',\n\n            labels: {\n              rotate: 0,\n            }\n          },\n          yaxis: {\n            max: 70\n          },\n          theme: {\n            palette: 'palette2'\n          }\n        }\n      }\n    }\n  }\n</script>",
+  scatterChart: {
+    series: [{
+      name: "SAMPLE A",
+      data: [[16.4, 5.4], [21.7, 2], [25.4, 3], [19, 2], [10.9, 1], [13.6, 3.2], [10.9, 7.4], [10.9, 0], [10.9, 8.2], [16.4, 0], [16.4, 1.8], [13.6, 0.3], [13.6, 0], [29.9, 0], [27.1, 2.3], [16.4, 0], [13.6, 3.7], [10.9, 5.2], [16.4, 6.5], [10.9, 0], [24.5, 7.1], [10.9, 0], [8.1, 4.7], [19, 0], [21.7, 1.8], [27.1, 0], [24.5, 0], [27.1, 0], [29.9, 1.5], [27.1, 0.8], [22.1, 2]]
+    }, {
+      name: "SAMPLE B",
+      data: [[6.4, 13.4], [1.7, 11], [5.4, 8], [9, 17], [1.9, 4], [3.6, 12.2], [1.9, 14.4], [1.9, 9], [1.9, 13.2], [1.4, 7], [6.4, 8.8], [3.6, 4.3], [1.6, 10], [9.9, 2], [7.1, 15], [1.4, 0], [3.6, 13.7], [1.9, 15.2], [6.4, 16.5], [0.9, 10], [4.5, 17.1], [10.9, 10], [0.1, 14.7], [9, 10], [12.7, 11.8], [2.1, 10], [2.5, 10], [27.1, 10], [2.9, 11.5], [7.1, 10.8], [2.1, 12]]
+    }, {
+      name: "SAMPLE C",
+      data: [[21.7, 3], [23.6, 3.5], [24.6, 3], [29.9, 3], [21.7, 20], [23, 2], [10.9, 3], [28, 4], [27.1, 0.3], [16.4, 4], [13.6, 0], [19, 5], [22.4, 3], [24.5, 3], [32.6, 3], [27.1, 4], [29.6, 6], [31.6, 8], [21.6, 5], [20.9, 4], [22.4, 0], [32.6, 10.3], [29.7, 20.8], [24.5, 0.8], [21.4, 0], [21.7, 6.9], [28.6, 7.7], [15.4, 0], [18.1, 0], [33.4, 0], [16.4, 0]]
+    }],
+    chartOptions: {
+      colors: themeColors,
+      chart: {
+        zoom: {
+          enabled: true,
+          type: 'xy'
+        }
+      },
+      xaxis: {
+        tickAmount: 10
+      },
+      yaxis: {
+        tickAmount: 7
+      }
+    }
+  },
+  scatterChartCode: "<template>\n  <vue-apex-charts type=\"scatter\" height=\"350\" :options=\"scatterChart.chartOptions\" :series=\"scatterChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      scatterChart: {\n        series: [{\n          name: \"SAMPLE A\",\n          data: [\n            [16.4, 5.4],\n            [21.7, 2],\n            [25.4, 3],\n            [19, 2],\n            [10.9, 1],\n            [13.6, 3.2],\n            [10.9, 7.4],\n            [10.9, 0],\n            [10.9, 8.2],\n            [16.4, 0],\n            [16.4, 1.8],\n            [13.6, 0.3],\n            [13.6, 0],\n            [29.9, 0],\n            [27.1, 2.3],\n            [16.4, 0],\n            [13.6, 3.7],\n            [10.9, 5.2],\n            [16.4, 6.5],\n            [10.9, 0],\n            [24.5, 7.1],\n            [10.9, 0],\n            [8.1, 4.7],\n            [19, 0],\n            [21.7, 1.8],\n            [27.1, 0],\n            [24.5, 0],\n            [27.1, 0],\n            [29.9, 1.5],\n            [27.1, 0.8],\n            [22.1, 2]\n          ]\n        }, {\n          name: \"SAMPLE B\",\n          data: [\n            [6.4, 13.4],\n            [1.7, 11],\n            [5.4, 8],\n            [9, 17],\n            [1.9, 4],\n            [3.6, 12.2],\n            [1.9, 14.4],\n            [1.9, 9],\n            [1.9, 13.2],\n            [1.4, 7],\n            [6.4, 8.8],\n            [3.6, 4.3],\n            [1.6, 10],\n            [9.9, 2],\n            [7.1, 15],\n            [1.4, 0],\n            [3.6, 13.7],\n            [1.9, 15.2],\n            [6.4, 16.5],\n            [0.9, 10],\n            [4.5, 17.1],\n            [10.9, 10],\n            [0.1, 14.7],\n            [9, 10],\n            [12.7, 11.8],\n            [2.1, 10],\n            [2.5, 10],\n            [27.1, 10],\n            [2.9, 11.5],\n            [7.1, 10.8],\n            [2.1, 12]\n          ]\n        }, {\n          name: \"SAMPLE C\",\n          data: [\n            [21.7, 3],\n            [23.6, 3.5],\n            [24.6, 3],\n            [29.9, 3],\n            [21.7, 20],\n            [23, 2],\n            [10.9, 3],\n            [28, 4],\n            [27.1, 0.3],\n            [16.4, 4],\n            [13.6, 0],\n            [19, 5],\n            [22.4, 3],\n            [24.5, 3],\n            [32.6, 3],\n            [27.1, 4],\n            [29.6, 6],\n            [31.6, 8],\n            [21.6, 5],\n            [20.9, 4],\n            [22.4, 0],\n            [32.6, 10.3],\n            [29.7, 20.8],\n            [24.5, 0.8],\n            [21.4, 0],\n            [21.7, 6.9],\n            [28.6, 7.7],\n            [15.4, 0],\n            [18.1, 0],\n            [33.4, 0],\n            [16.4, 0]\n          ]\n        }],\n        chartOptions: {\n          colors: themeColors,\n          chart: {\n            zoom: {\n              enabled: true,\n              type: 'xy'\n            }\n          },\n          xaxis: {\n            tickAmount: 10,\n          },\n          yaxis: {\n            tickAmount: 7\n          }\n        }\n      }\n    }\n  }\n</script>",
+  heatMapChart: {
+    series: [{
+      name: 'Metric1',
+      data: generateDataHeatMap(18, {
+        min: 0,
+        max: 90
+      })
+    }, {
+      name: 'Metric2',
+      data: generateDataHeatMap(18, {
+        min: 0,
+        max: 90
+      })
+    }, {
+      name: 'Metric3',
+      data: generateDataHeatMap(18, {
+        min: 0,
+        max: 90
+      })
+    }, {
+      name: 'Metric4',
+      data: generateDataHeatMap(18, {
+        min: 0,
+        max: 90
+      })
+    }, {
+      name: 'Metric5',
+      data: generateDataHeatMap(18, {
+        min: 0,
+        max: 90
+      })
+    }, {
+      name: 'Metric6',
+      data: generateDataHeatMap(18, {
+        min: 0,
+        max: 90
+      })
+    }, {
+      name: 'Metric7',
+      data: generateDataHeatMap(18, {
+        min: 0,
+        max: 90
+      })
+    }, {
+      name: 'Metric8',
+      data: generateDataHeatMap(18, {
+        min: 0,
+        max: 90
+      })
+    }, {
+      name: 'Metric9',
+      data: generateDataHeatMap(18, {
+        min: 0,
+        max: 90
+      })
+    }],
+    chartOptions: {
+      dataLabels: {
+        enabled: false
+      },
+      colors: ["#7367F0"]
+    }
+  },
+  heatMapChartCode: "<template>\n  <vue-apex-charts type=\"heatmap\" height=\"350\" :options=\"heatMapChart.chartOptions\" :series=\"heatMapChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      heatMapChart: {\n        series: [{\n            name: 'Metric1',\n            data: generateDataHeatMap(18, {\n              min: 0,\n              max: 90\n            })\n          },\n          {\n            name: 'Metric2',\n            data: generateDataHeatMap(18, {\n              min: 0,\n              max: 90\n            })\n          },\n          {\n            name: 'Metric3',\n            data: generateDataHeatMap(18, {\n              min: 0,\n              max: 90\n            })\n          },\n          {\n            name: 'Metric4',\n            data: generateDataHeatMap(18, {\n              min: 0,\n              max: 90\n            })\n          },\n          {\n            name: 'Metric5',\n            data: generateDataHeatMap(18, {\n              min: 0,\n              max: 90\n            })\n          },\n          {\n            name: 'Metric6',\n            data: generateDataHeatMap(18, {\n              min: 0,\n              max: 90\n            })\n          },\n          {\n            name: 'Metric7',\n            data: generateDataHeatMap(18, {\n              min: 0,\n              max: 90\n            })\n          },\n          {\n            name: 'Metric8',\n            data: generateDataHeatMap(18, {\n              min: 0,\n              max: 90\n            })\n          },\n          {\n            name: 'Metric9',\n            data: generateDataHeatMap(18, {\n              min: 0,\n              max: 90\n            })\n          }\n          ],\n        chartOptions: {\n          colors: themeColors,\n          dataLabels: {\n            enabled: false\n          },\n          colors: [\"#008FFB\"],\n        }\n      }\n    }\n  }\n</script>",
+  pieChart: {
+    series: [44, 55, 13, 43],
+    chartOptions: {
+      labels: ['Team A', 'Team B', 'Team C', 'Team D'],
+      colors: themeColors,
+      responsive: [{
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }]
+    }
+  },
+  pieChartCode: "<template>\n  <vue-apex-charts type=\"pie\" height=\"350\" :options=\"pieChart.chartOptions\" :series=\"pieChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      pieChart: {\n        series: [44, 55, 13, 43],\n        chartOptions: {\n          labels: ['Team A', 'Team B', 'Team C', 'Team D'],\n          colors: themeColors,\n          responsive: [{\n            breakpoint: 480,\n            options: {\n              chart: {\n                width: 200\n              },\n              legend: {\n                position: 'bottom'\n              }\n            }\n          }]\n        }\n      }\n    }\n  }\n</script>",
+  donutChart: {
+    series: [44, 55, 41, 17],
+    chartOptions: {
+      colors: themeColors,
+      responsive: [{
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }]
+    }
+  },
+  donutChartCode: "<template>\n  <vue-apex-charts type=\"donut\" height=\"350\" :options=\"donutChart.chartOptions\" :series=\"donutChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      donutChart: {\n        series: [44, 55, 41, 17],\n        chartOptions: {\n          colors: themeColors,\n          responsive: [{\n            breakpoint: 480,\n            options: {\n              chart: {\n                width: 200\n              },\n              legend: {\n                position: 'bottom'\n              }\n            }\n          }]\n        }\n      }\n    }\n  }\n</script>",
+  radialBarChart: {
+    series: [44, 55, 67, 83],
+    chartOptions: {
+      colors: themeColors,
+      plotOptions: {
+        radialBar: {
+          dataLabels: {
+            name: {
+              fontSize: '22px'
+            },
+            value: {
+              fontSize: '16px'
+            },
+            total: {
+              show: true,
+              label: 'Total',
+              formatter: function formatter() {
+                // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+                return 249;
+              }
+            }
+          }
+        }
+      },
+      labels: ['Apples', 'Oranges', 'Bananas', 'Berries']
+    }
+  },
+  radialBarChartCode: "<template>\n  <vue-apex-charts type=\"radialBar\" height=\"350\" :options=\"radialBarChart.chartOptions\" :series=\"radialBarChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      radialBarChart: {\n        series: [44, 55, 67, 83],\n        chartOptions: {\n          colors: themeColors,\n          plotOptions: {\n            radialBar: {\n              dataLabels: {\n                name: {\n                  fontSize: '22px',\n                },\n                value: {\n                  fontSize: '16px',\n                },\n                total: {\n                  show: true,\n                  label: 'Total',\n                  formatter: function(w) {\n                    // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function\n                    return 249\n                  }\n                }\n              }\n            }\n          },\n          labels: ['Apples', 'Oranges', 'Bananas', 'Berries'],\n        }\n      }\n    }\n  }\n</script>",
+  radarChart: {
+    series: [{
+      name: 'Series 1',
+      data: [80, 50, 30, 40, 100, 20]
+    }],
+    chartOptions: {
+      colors: themeColors,
+      labels: ['January', 'February', 'March', 'April', 'May', 'June']
+    }
+  },
+  radarChartCode: "<template>\n  <vue-apex-charts type=\"radar\" height=\"350\" :options=\"radarChart.chartOptions\" :series=\"radarChart.series\"></vue-apex-charts>\n</template>\n\n<script>\n  data() {\n    return {\n      themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E']\n      radarChart: {\n        series: [{\n          name: 'Series 1',\n          data: [80, 50, 30, 40, 100, 20],\n        }],\n        chartOptions: {\n          colors: themeColors,\n          labels: ['January', 'February', 'March', 'April', 'May', 'June'],\n        }\n      }\n    }\n  }\n</script>"
+});
 
 /***/ })
 
