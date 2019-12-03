@@ -8,7 +8,7 @@
     <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
 
     <!-- <title>Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template</title> -->
-    <title>VuexyTest</title> 
+    <title>Datum Crypto</title> 
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset(mix('css/main.css')) }}">
